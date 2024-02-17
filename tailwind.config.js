@@ -34,10 +34,7 @@ module.exports = {
       backgroundImage:{
         videoBg: "url('./images/video-bg.jpg')"
       },
-      width: {
-        50: '50px',
-      },
-      height: {
+      spacing:{
         50: '50px',
       },
       borderRadius: {
