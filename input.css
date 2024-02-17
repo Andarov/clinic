@@ -55,11 +55,11 @@
 
 @layer components {
   .main-btn {
-    @apply flex items-center gap-2.5 bg-white rounded-3 py-3.5 px-7 hover:bg-brand-emerald-900 hover:text-white duration-300 max-w-max text-base;
+    @apply flex items-center gap-2.5 bg-white rounded-3 py-3.5 px-7 hover:bg-brand-emerald-900 duration-300 max-w-max text-base hover:text-white;
   }
 
-  .main-btn--lime{
-    @apply bg-brand-lime-500 text-[17px] font-medium
+  .main-btn--lime {
+    @apply bg-brand-lime-500 text-[17px] font-medium;
   }
 
   .header-social-networks-list-item-link {
@@ -76,4 +76,3 @@
     @apply max-w-base px-5 w-full mx-auto;
   }
 }
-

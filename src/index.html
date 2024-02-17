@@ -21,7 +21,7 @@
                 </a>
 
                 <!-- search -->
-                <div class='hidden lg:block max-w-[550px] w-full'>
+                <div class='hidden max-w-[550px] w-full lg:block'>
                     <div class="flex items-center justify-between mb-2.5 gap-5">
                         <!-- address -->
                         <address class="flex items-center not-italic gap-2.5">
@@ -46,19 +46,19 @@
                 <!-- social networks -->
                 <ul class="hidden md:flex md:gap-2.5 gap-8">
                     <!-- vkontakt -->
-                    <li class='header_social-networks-list_item'>
+                    <li>
                         <a target='_blank' aria-label='vk' title='vk' href="https://vk.com" class="header-social-networks-list-item-link">
                             <img width='24' height='24' src="./images/vk.svg" alt="vk" class="w-6 h-6">
                         </a>
                     </li>
                     <!-- telegram -->
-                    <li class='header_social-networks-list_item'>
+                    <li>
                         <a target='_blank' aria-label='telegram' title='telegram' href="https://t.me/" class="header-social-networks-list-item-link">
                             <img width='24' height='24' src="./images/telegram.svg" alt="telegram" class="w-6 h-6">
                         </a>
                     </li>
                     <!-- whatsapp -->
-                    <li class='header_social-networks-list_item'>
+                    <li>
                         <a target='_blank' aria-label='whatsapp' title='whatsapp' href="https://whatsapp.com" class="header-social-networks-list-item-link">
                             <img width='24' height='24' src="./images/whatsapp.svg" alt="whatsapp" class="w-6 h-6">
                         </a>
@@ -66,21 +66,21 @@
                 </ul>
 
                 <!-- contact -->
-                <div class="flex items-center justify-center lg:flex-col lg:gap-2.5 min-w-max gap-5">
+                <div class="flex items-center justify-center min-w-max gap-5 lg:flex-col lg:gap-2.5">
                     <!-- search -->
-                    <button aria-label='search' class="block lg:hidden btn-normal p-2 rounded-full">
+                    <button aria-label='search' class="block btn-normal p-2 rounded-full lg:hidden">
                         <img width='24' height='24' src="./images/search.svg" alt="search icon" class="w-6 h-6">
                     </button>
                     <!-- tel -->
                     <a href="tel:+73433437700" class="text-xl leading-[30px] font-medium">
                         <span class="hidden lg:inline">+7 (343) 343 77 00</span>
-                        <img width='24' height='24' src="./images/call.svg" alt="call icon" class="block lg:hidden w-6 h-6">
+                        <img width='24' height='24' src="./images/call.svg" alt="call icon" class="block w-6 h-6 lg:hidden">
                     </a>
                     <!-- zapis-online-link -->
-                    <a href="https://example.com" class="hidden md:inline-block main-btn">Онлайн-запись</a>
+                    <a href="https://example.com" class="hidden main-btn md:inline-block">Онлайн-запись</a>
 
                     <!-- menu && exit -->
-                     <button class="block md:hidden js-hamburger-btn z-40">
+                     <button class="block js-hamburger-btn z-40 md:hidden">
                         <img width='28' height='28' src="./images/menu.svg" alt="cross icon" class="w-8 h-8 js-menu-icon">
                         <img width='28' height='28' src="./images/cross.svg" alt="cross icon" class="w-8 h-8 hidden js-cross-icon">
                     </button>
@@ -89,7 +89,7 @@
                     <div class="hidden md:hidden fixed w-full h-full inset-0 bg-black/70 z-10 js-overlay"></div>
 
                     <!-- responsive nav -->
-                    <div class="block md:hidden fixed top-0 left-0 w-full h-full bg-brand-lime-500 z-30 -translate-x-full js-responsive-nav duration-300  max-w-none mobile-m:max-w-80">
+                    <div class="block fixed top-0 left-0 w-full h-full bg-brand-lime-500 z-30 -translate-x-full js-responsive-nav duration-300  max-w-none mobile-m:max-w-80  md:hidden">
                         <div class="flex flex-col gap-6 h-full px-6 py-5 overflow-y-auto">
                             <!-- mobile-zapis-link -->
                             <a href="https://example.com" class="main-btn w-full mobile-m:max-w-none justify-center">Онлайн-запись</a>
@@ -98,7 +98,7 @@
 
                             <!-- mobile-nav -->
                             <nav class='w-full'>
-                                <ul class="flex gap-2 w-full grow justify-between lg:justify-normal lg:gap-12 md:flex-row flex-col">
+                                <ul class="flex flex-col gap-2 w-full grow justify-between md:flex-row lg:justify-normal lg:gap-12">
                                     <li>
                                         <a class="header-navigation-link" href="#">Акции</a>
                                     </li>
@@ -136,7 +136,7 @@
                             </div>
 
                             <!-- mobile-social-networks -->
-                            <ul class="flex md:gap-2.5 gap-8">
+                            <ul class="flex gap-8 md:gap-2.5">
                                 <!-- vkontakt -->
                                 <li>
                                     <a target='_blank' aria-label='vk' title='vk' href="https://vk.com" class="header-social-networks-list-item-link">
@@ -168,15 +168,15 @@
             <div class="container">
                 <div class="flex items-center gap-7">
                     <!-- catalog-btn -->
-                    <button class="flex items-center gap-2.5 bg-white py-4 px-6 hover:bg-brand-emerald-900 hover:text-white duration-300 min-w-max">
+                    <button class="flex items-center gap-2.5 bg-white py-4 px-6 hover:bg-brand-emerald-900 duration-300 min-w-max hover:text-white">
                         <svg class='w-6 h-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor" />
                         </svg>
-                        <span class="hidden lg:inline uppercase text-15 leading-6">Услуги и цены</span>
+                        <span class="hidden uppercase text-15 leading-6 lg:inline">Услуги и цены</span>
                     </button>
                     <!-- catalog-nav -->
                     <nav class='w-full'>
-                        <ul class="flex gap-2 w-full grow justify-between lg:justify-normal lg:gap-12 md:flex-row flex-col">
+                        <ul class="flex flex-col gap-2 w-full grow justify-between md:flex-row lg:justify-normal lg:gap-12">
                             <li>
                                 <a class="header-navigation-link" href="#">Акции</a>
                             </li>
@@ -203,12 +203,12 @@
     </header>
 
     <!-- hero -->
-    <div class="relative -z-10 pt-[86px] pb-24  md:py-[86px] bg-brand-lime-500 hero-bg font-Roboto">
+    <div class="relative -z-10 pt-[86px] pb-24 bg-brand-lime-500 hero-bg font-roboto md:py-[86px]">
         <!-- content -->
         <div class="container hero-content">
             <div class="max-w-[551px] space-y-7 z-10 relative">
                 <!-- hero-title -->
-                <h2 class="md:text-[56px] leading-10 md:!leading-[60px] font-Manrope font-medium 520:text-5xl mobile-l:text-4xl text-3xl">30% скидка на профессиональную гигиену полости <br> рта
+                <h2 class="text-3xl leading-10 font-Manrope font-medium 520:text-5xl mobile-l:text-4xl  md:!leading-[60px] md:text-[56px]">30% скидка на профессиональную гигиену полости <br> рта
                 </h2>
                 <!-- hero-list -->
                 <ul class="list-disc pl-5">
@@ -225,65 +225,65 @@
     </div>
 
     <!-- main -->
-    <main class="md:pt-[105px] md:pb-24 sm:py-20 py-16">
+    <main class="py-16 sm:py-20 md:pt-[105px] md:pb-24">
         <!-- container -->
         <div class="container">
             <!-- services top -->
-            <div class="flex items-center md:mb-12 sm:mb-10 mb-8">
+            <div class="flex items-center mb-8 sm:mb-10">
                 <!-- list-btn -->
-                <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full 520:mr-6 mr-2 min-w-max aspect-square">
-                    <img width="50" height="50" src="./images/list.svg" alt="List icon" class="md:w-[50px] md:h-[50px] sm:w-10 sm:h-10 520:w-8 520:h-8 w-6 h-6">
+                <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
+                    <img width="50" height="50" src="./images/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
                 </button>
                 <!-- service-heading-wrapper -->
-                <div class="md:py-5 border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5">
-                    <h2 class="md:text-[32px] leading-[37.7px] 520:text-3xl mobile-m:text-2xl text-xl">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
+                <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
+                    <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
                 </div>
             </div>
     
             <!-- services-list -->
             <div>
-                <div class="grid 890:grid-cols-4 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2 grid-cols-1 mb-11">
+                <div class="grid grid-cols-1 mb-11 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2  890:grid-cols-4">
                     <!-- 1 video -->
-                    <div class="flex justify-center items-center w-full h-full col-span-2 520:row-span-3 row-span-2 bg-videoBg bg-cover border rounded-[15px]">
+                    <div class="flex justify-center items-center w-full h-full col-span-2 row-span-2 bg-videoBg bg-cover border rounded-[15px] 520:row-span-3">
                         <div class="flex flex-col items-center">
                             <button class="mb-1">
-                                <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="mobile-l:w-[50px] mobile-l:h-[50px] w-10 h-10">
+                                <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="w-10 h-10 mobile-l:w-[50px] mobile-l:h-[50px]">
                             </button>
-                            <span class="font-medium mobile-l:text-2xl text-center text-white text-xl">Видео о клинике</span>
+                            <span class="font-medium text-center text-white text-xl mobile-l:text-2xl">Видео о клинике</span>
                         </div>
                     </div>
     
                     <!-- 2 -->
-                    <div class="relative flex items-end xl:pl-10 xl:pb-12 pb-8 pl-8 bg-brand-sky-200 xl:row-span-2 border rounded-[15px] xl:col-span-1 890:col-span-2 md:col-span-1 col-span-2">
-                        <img class="absolute top-10 right-7 md:w-[83px] md:h-20 w-[67px] h-16" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
-                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Детская
+                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] col-span-2 md:col-span-1 890:col-span-2 xl:col-span-1 xl:pl-10 xl:pb-12 xl:row-span-2">
+                        <img class="absolute top-10 right-7 w-[67px] h-16 md:w-[83px] md:h-20" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
+                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Детская
                             стоматология</h3>
                     </div>
     
                     <!-- 3 -->
-                    <div class="relative flex items-end xl:pl-10 xl:pb-12 pb-8 pl-8 bg-brand-sky-200 xl:row-span-2 border rounded-[15px] md:h-auto h-[180px] xl:col-span-1 890:col-span-2 md:col-span-1 col-span-2">
-                        <img class="absolute mobile-l:top-9 right-7 top-6 md:w-[73px] md:h-70 w-[67px] h-16" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
-                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Терапевти-ческие услуги</h3>
+                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] h-[180px] col-span-2 md:h-auto xl:col-span-1 md:col-span-1 890:col-span-2 xl:row-span-2 xl:pl-10 xl:pb-12">
+                        <img class="absolute w-[67px] h-16 right-7 top-6 mobile-l:top-9 md:w-[73px] md:h-70" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
+                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Терапевти-ческие услуги</h3>
                     </div>
     
                     <!-- 4 -->
-                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px]">
-                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Ортодонтия</h3>
-                        <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class="mobile-l:static absolute top-7 right-6 md:w-[151px] md:h-[50px] w-[113px] h-10">
+                    <div class="relative flex items-end pb-7 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px] mobile-l:justify-between mobile-l:items-center mobile-l:pb-0">
+                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Ортодонтия</h3>
+                        <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class=" w-[113px] h-10 absolute top-7 right-6 mobile-l:static md:w-[151px] md:h-[50px]">
                     </div>
     
                     <!-- 5 -->
-                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 px-7 xl:pl-12 xl:pr-11 bg-brand-sky-200 col-span-2 border rounded-[15px] 890:h-auto h-[180px]">
-                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Профессиональная <br>
+                    <div class="relative flex items-end h-[180px] pb-7 px-7 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto xl:pl-12 xl:pr-11">
+                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Профессиональная <br>
                             гигиена полости рта</h3>
-                        <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='mobile-l:static absolute top-7 right-6 md:w-[120px] md:h-[50px] w-24 h-10'>
+                        <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='absolute top-7 right-6 w-24 h-10 mobile-l:static md:w-[120px] md:h-[50px]'>
                     </div>
                     
                     <!-- 6 -->
-                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] 890:h-auto h-[180px]">
-                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Имплантация <br>
+                    <div class="h-[180px] relative flex items-end pb-7 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto">
+                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Имплантация <br>
                             и хирургия</h3>
-                        <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="mobile-l:static absolute top-7 right-6 md:w-[73px] md:h-70 w-[67px] h-16">
+                        <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="absolute w-[67px] h-16 top-7 right-6 mobile-l:static md:w-[73px] md:h-70">
                     </div>
                 </div>
 
