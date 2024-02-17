@@ -55,7 +55,7 @@
 
 @layer components {
   .main-btn {
-    @apply flex items-center gap-2.5 bg-white rounded-3 py-3.5 px-7 hover:bg-brand-emerald-900 hover:text-white duration-300 max-w-max text-base font-normal;
+    @apply flex items-center gap-2.5 bg-white rounded-3 py-3.5 px-7 hover:bg-brand-emerald-900 hover:text-white duration-300 max-w-max text-base;
   }
 
   .main-btn--lime{

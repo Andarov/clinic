@@ -647,7 +647,6 @@ input[type="search"]::-webkit-search-cancel-button,
   padding-right: 1.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   transition-duration: 300ms;
 }
 
@@ -1186,10 +1185,6 @@ input[type="search"]::-webkit-search-cancel-button,
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .uppercase {
