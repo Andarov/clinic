@@ -77,6 +77,3 @@
   }
 }
 
-.custom-grid {
-  grid-template-rows: repeat(4, 180px);
-}
