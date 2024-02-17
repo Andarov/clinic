@@ -38,7 +38,7 @@
 
 @layer base {
   body {
-    @apply text-base text-brand-emerald-900 font-ttnorms;
+    @apply text-base text-brand-emerald-900 font-tt-norms;
   }
 
   input {

@@ -19,8 +19,8 @@ module.exports = {
       },
       fontFamily: {
         'roboto': ["Roboto", "sans-serif"],
-        'Manrope': ["Manrope", "sans-serif"],
-        'ttnorms': ["TT Norms", "sans-serif"]
+        'manrope': ["Manrope", "sans-serif"],
+        'tt-norms': ["TT Norms", "sans-serif"]
       },    
       fontSize: {
         15: '15px',
