@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINICA NATIVE</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="bg-brand-lime-500 font-roboto">
+        <!-- header main content -->
+        <div class="container">
+            <div class="flex items-center justify-between gap-5 py-5">
+                <!-- logo -->
+                <a href="index.html" class='min-w-max'>
+                    <img width='145' height='48' src="./images/logo.png" aria-label='logo' alt="Clinica Native logo" class='md:w-[145px] md:h-12 mobile-l:w-[102px] mobile-l:h-9 w-[84px] h-7'>
+                </a>
+
+                <!-- search -->
+                <div class='hidden lg:block max-w-[550px] w-full'>
+                    <div class="flex items-center justify-between mb-2.5 gap-5">
+                        <!-- address -->
+                        <address class="flex items-center not-italic gap-2.5">
+                            <img width='24' height='24' src="./images/map.svg" alt="map icon" class="w-6 h-6">
+                            <span class="text-base leading-30">г. Екатеринбург, ул. Азина, 31</span>
+                        </address>
+
+                        <!-- time -->
+                        <div class="flex items-center gap-2.5">
+                            <img width='24' height='24' src="./images/clock.svg" alt="map icon" class="w-6 h-6">
+                            <span class="text-base leading-30">Пн-Вс 09:00 - 21:00</span>
+                        </div>
+                    </div>
+
+                    <!-- input wrapper -->
+                    <div class="flex items-center relative w-full">
+                        <input placeholder='Поиск по сайту' title='search' type="search" class="pr-10">
+                        <img width='24' height='24' src="./images/search.svg" alt="search icon" class="absolute right-2.5 w-6 h-6">
+                    </div>
+                </div>
+
+                <!-- social networks -->
+                <ul class="hidden md:flex md:gap-2.5 gap-8">
+                    <!-- vkontakt -->
+                    <li class='header_social-networks-list_item'>
+                        <a target='_blank' aria-label='vk' title='vk' href="https://vk.com" class="header-social-networks-list-item-link">
+                            <img width='24' height='24' src="./images/vk.svg" alt="vk" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <!-- telegram -->
+                    <li class='header_social-networks-list_item'>
+                        <a target='_blank' aria-label='telegram' title='telegram' href="https://t.me/" class="header-social-networks-list-item-link">
+                            <img width='24' height='24' src="./images/telegram.svg" alt="telegram" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <!-- whatsapp -->
+                    <li class='header_social-networks-list_item'>
+                        <a target='_blank' aria-label='whatsapp' title='whatsapp' href="https://whatsapp.com" class="header-social-networks-list-item-link">
+                            <img width='24' height='24' src="./images/whatsapp.svg" alt="whatsapp" class="w-6 h-6">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- contact -->
+                <div class="flex items-center justify-center lg:flex-col lg:gap-2.5 min-w-max gap-5">
+                    <!-- search -->
+                    <button aria-label='search' class="block lg:hidden btn-normal p-2 rounded-full">
+                        <img width='24' height='24' src="./images/search.svg" alt="search icon" class="w-6 h-6">
+                    </button>
+                    <!-- tel -->
+                    <a href="tel:+73433437700" class="text-xl leading-[30px] font-medium">
+                        <span class="hidden lg:inline">+7 (343) 343 77 00</span>
+                        <img width='24' height='24' src="./images/call.svg" alt="call icon" class="block lg:hidden w-6 h-6">
+                    </a>
+                    <!-- zapis-online-link -->
+                    <a href="https://example.com" class="hidden md:inline-block main-btn">Онлайн-запись</a>
+
+                    <!-- menu && exit -->
+                     <button class="block md:hidden js-hamburger-btn z-40">
+                        <img width='28' height='28' src="./images/menu.svg" alt="cross icon" class="w-8 h-8 js-menu-icon">
+                        <img width='28' height='28' src="./images/cross.svg" alt="cross icon" class="w-8 h-8 hidden js-cross-icon">
+                    </button>
+
+                    <!-- overlay -->
+                    <div class="hidden md:hidden fixed w-full h-full inset-0 bg-black/70 z-10 js-overlay"></div>
+
+                    <!-- responsive nav -->
+                    <div class="block md:hidden fixed top-0 left-0 w-full h-full bg-brand-lime-500 z-30 -translate-x-full js-responsive-nav duration-300  max-w-none mobile-m:max-w-80">
+                        <div class="flex flex-col gap-6 h-full px-6 py-5 overflow-y-auto">
+                            <!-- mobile-zapis-link -->
+                            <a href="https://example.com" class="main-btn w-full mobile-m:max-w-none justify-center">Онлайн-запись</a>
+
+                            <hr class="border-none bg-brand-lime-700 min-h-[1px] w-full">
+
+                            <!-- mobile-nav -->
+                            <nav class='w-full'>
+                                <ul class="flex gap-2 w-full grow justify-between lg:justify-normal lg:gap-12 md:flex-row flex-col">
+                                    <li>
+                                        <a class="header-navigation-link" href="#">Акции</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-navigation-link" href="#">Сервисы</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-navigation-link" href="#">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-navigation-link" href="#">Наши врачи</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-navigation-link" href="#">О клинике</a>
+                                    </li>
+                                    <li>
+                                        <a class="header-navigation-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="mb-auto">
+                                <div class="flex flex-col gap-5">
+                                    <!-- mobile-address -->
+                                    <address class="flex items-center not-italic gap-2.5">
+                                        <img width='24' height='24' src="./images/map.svg" alt="map icon" class="w-6 h-6">
+                                        <span class="text-base leading-30">г. Екатеринбург, ул. Азина, 31</span>
+                                    </address>
+                                    <!-- mobile-time -->
+                                    <div class="flex items-center gap-2.5">
+                                        <img width='24' height='24' src="./images/clock.svg" alt="map icon" class="w-6 h-6">
+                                        <span class="text-base leading-30">Пн-Вс 09:00 - 21:00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- mobile-social-networks -->
+                            <ul class="flex md:gap-2.5 gap-8">
+                                <!-- vkontakt -->
+                                <li>
+                                    <a target='_blank' aria-label='vk' title='vk' href="https://vk.com" class="header-social-networks-list-item-link">
+                                        <img width='24' height='24' src="./images/vk.svg" alt="vk" class="w-6 h-6">
+                                    </a>
+                                </li>
+                                <!-- telegram -->
+                                <li>
+                                    <a target='_blank' aria-label='telegram' title='telegram' href="https://t.me/" class="header-social-networks-list-item-link">
+                                        <img width='24' height='24' src="./images/telegram.svg" alt="telegram" class="w-6 h-6">
+                                    </a>
+                                </li>
+                                <!-- whatsapp -->
+                                <li>
+                                    <a target='_blank' aria-label='whatsapp' title='whatsapp' href="https://whatsapp.com" class="header-social-networks-list-item-link">
+                                        <img width='24' height='24' src="./images/whatsapp.svg" alt="whatsapp" class="w-6 h-6">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- header-catalog -->
+        <div class="hidden md:block w-full bg-brand-lime-700">
+            <div class="container">
+                <div class="flex items-center gap-7">
+                    <!-- catalog-btn -->
+                    <button class="flex items-center gap-2.5 bg-white py-4 px-6 hover:bg-brand-emerald-900 hover:text-white duration-300 min-w-max">
+                        <svg class='w-6 h-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor" />
+                        </svg>
+                        <span class="hidden lg:inline uppercase text-15 leading-6">Услуги и цены</span>
+                    </button>
+                    <!-- catalog-nav -->
+                    <nav class='w-full'>
+                        <ul class="flex gap-2 w-full grow justify-between lg:justify-normal lg:gap-12 md:flex-row flex-col">
+                            <li>
+                                <a class="header-navigation-link" href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a class="header-navigation-link" href="#">Сервисы</a>
+                            </li>
+                            <li>
+                                <a class="header-navigation-link" href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="header-navigation-link" href="#">Наши врачи</a>
+                            </li>
+                            <li>
+                                <a class="header-navigation-link" href="#">О клинике</a>
+                            </li>
+                            <li>
+                                <a class="header-navigation-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <div class="relative pt-[86px] pb-24  md:py-[86px] bg-brand-lime-500 hero-bg font-Roboto">
+        <!-- content -->
+        <div class="container hero-content">
+            <div class="max-w-[551px] space-y-[30px] z-10 relative">
+                <!-- hero-title -->
+                <h2 class="md:text-[56px] leading-10 md:!leading-[60px] font-Manrope font-medium 520:text-5xl mobile-l:text-4xl text-3xl">30% скидка на профессиональную гигиену полости <br> рта
+                </h2>
+                <!-- hero-list -->
+                <ul class="list-disc pl-5">
+                    <li class="text-lg font-normal leading-8">Обычная стоимость 5000 руб.</li>
+                    <li class="text-lg font-normal leading-8">Стоимость по акции 3500 руб.</li>
+                </ul>
+                <!-- padrobnee-link -->
+                <a href="#" class="main-btn">Подробнее</a>
+            </div>
+        </div>
+        
+        <!-- background image -->
+        <img src="./images/hero-bg.png" alt="hero background image" class="absolute inset-y-0 right-0 md:w-[56%] h-full object-cover object-left -z-[1">
+    </div>
+
+    <!-- main -->
+    <main class="md:pt-[105px] md:pb-24 sm:py-20 py-16">
+        <!-- container -->
+        <div class="container">
+            <!-- services top -->
+            <div class="flex items-center md:mb-12 sm:mb-10 mb-8">
+                <!-- list-btn -->
+                <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full 520:mr-6 mr-2 min-w-max aspect-square">
+                    <img width="50" height="50" src="./images/list.svg" alt="List icon" class="md:w-[50px] md:h-[50px] sm:w-10 sm:h-10 520:w-8 520:h-8 w-6 h-6">
+                </button>
+                <!-- service-heading-wrapper -->
+                <div class="md:py-5 border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5">
+                    <h2 class="md:text-[32px] leading-[37.7px] font-normal 520:text-3xl mobile-m:text-2xl text-xl">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
+                </div>
+            </div>
+    
+            <!-- services-list -->
+            <div>
+                <div class="grid 890:grid-cols-4 custom-grid gap-5 md:grid-cols-2 grid-cols-1 mb-11">
+                    <!-- 1 video -->
+                    <div class="flex justify-center items-center w-full h-full col-span-2 520:row-span-3 row-span-2 bg-videoBg bg-cover border rounded-[15px]">
+                        <div class="flex flex-col items-center">
+                            <button class="mb-1">
+                                <img class="w-[50px] h-50px" width="50" height="50" src="./images/play.svg" alt="Play btn" class="mobile-l:w-[50px] mobile-l:h-[50px] w-10 h-10">
+                            </button>
+                            <span class="font-medium mobile-l:text-2xl text-center text-white text-xl">Видео о клинике</span>
+                        </div>
+                    </div>
+    
+                    <!-- 2 -->
+                    <div class="relative flex items-end xl:pl-10 xl:pb-12 pb-8 pl-8 bg-brand-sky-200 xl:row-span-2 border rounded-[15px] xl:col-span-1 890:col-span-2 md:col-span-1 col-span-2">
+                        <img class="absolute top-10 right-7 md:w-[83px] md:h-20 w-[67px] h-16" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
+                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Детская
+                            стоматология</h3>
+                    </div>
+    
+                    <!-- 3 -->
+                    <div class="relative flex items-end xl:pl-10 xl:pb-12 pb-8 pl-8 bg-brand-sky-200 xl:row-span-2 border rounded-[15px] xl:col-span-1 890:col-span-2 md:col-span-1 col-span-2">
+                        <img class="absolute mobile-l:top-9 right-7 top-6 md:w-[73px] md:h-70 w-[67px] h-16" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
+                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Терапевти-ческие услуги</h3>
+                    </div>
+    
+                    <!-- 4 -->
+                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] md:h-auto h-[180px]">
+                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Ортодонтия</h3>
+                        <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class="mobile-l:static absolute top-7 right-6 md:w-[151px] md:h-[50px] w-[113px] h-10">
+                    </div>
+    
+                    <!-- 5 -->
+                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 px-7 xl:pl-12 xl:pr-11 bg-brand-sky-200 col-span-2 border rounded-[15px] 890:h-auto h-[180px]">
+                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Профессиональная <br>
+                            гигиена полости рта</h3>
+                        <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='mobile-l:static absolute top-7 right-6 md:w-[120px] md:h-[50px] w-24 h-10'>
+                    </div>
+                    
+                    <!-- 6 -->
+                    <div class="relative flex mobile-l:items-center items-end mobile-l:justify-between pb-7 mobile-l:pb-0 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] 890:h-auto h-[180px]">
+                        <h3 class="lg:text-[34px] lg:leading-[44px] text-2xl">Имплантация <br>
+                            и хирургия</h3>
+                        <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="mobile-l:static absolute top-7 right-6 md:w-[73px] md:h-70 w-[67px] h-16">
+                    </div>
+                </div>
+
+                <!-- more-btn -->
+                <div class="flex justify-center">
+                    <button class="main-btn main-btn--lime">Смотреть все услуги</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- js -->
+    <script src="./main.js"></script>
+</body>
+</html>
