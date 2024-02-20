@@ -29,7 +29,7 @@ module.exports = {
         30: '30px',
       },
       maxWidth:{
-        base: "1388px",
+        base: "1390px",
       },
       backgroundImage:{
         videoBg: "url('./images/video-bg.jpg')"

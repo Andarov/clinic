@@ -225,74 +225,108 @@
     </div>
 
     <!-- main -->
-    <main class="py-16 sm:py-20 md:pt-[105px] md:pb-24">
-        <!-- container -->
-        <div class="container">
-            <!-- services top -->
-            <div class="flex items-center mb-8 sm:mb-10">
-                <!-- list-btn -->
-                <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
-                    <img width="50" height="50" src="./images/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
-                </button>
-                <!-- service-heading-wrapper -->
-                <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
-                    <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
+    <main class="py-14 sm:pt-20 md:pt-[105px]">
+        
+        <!-- services -->
+        <section class="pb-7 md:pb-10 lg:pb-14">
+            <!-- container -->
+            <div class="container">
+                <!-- services top -->
+                <div class="flex items-center mb-8 sm:mb-10">
+                    <!-- list-btn -->
+                    <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
+                        <img width="50" height="50" src="./images/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
+                    </button>
+                    <!-- service-heading-wrapper -->
+                    <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
+                        <h2>Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
+                    </div>
                 </div>
-            </div>
-    
-            <!-- services-list -->
-            <div>
-                <div class="grid grid-cols-1 mb-11 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2  890:grid-cols-4">
-                    <!-- 1 video -->
-                    <div class="flex justify-center items-center w-full h-full col-span-2 row-span-2 bg-videoBg bg-cover border rounded-[15px] 520:row-span-3">
-                        <div class="flex flex-col items-center">
-                            <button class="mb-1">
-                                <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="w-10 h-10 mobile-l:w-[50px] mobile-l:h-[50px]">
-                            </button>
-                            <span class="font-medium text-center text-white text-xl mobile-l:text-2xl">Видео о клинике</span>
+        
+                <!-- services-list -->
+                <div>
+                    <div class="grid grid-cols-1 mb-11 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2  890:grid-cols-4">
+                        <!-- 1 video -->
+                        <div class="flex justify-center items-center w-full h-full col-span-2 row-span-2 bg-videoBg bg-cover border rounded-[15px] 520:row-span-3">
+                            <div class="flex flex-col items-center">
+                                <button class="mb-1">
+                                    <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="w-10 h-10 mobile-l:w-[50px] mobile-l:h-[50px]">
+                                </button>
+                                <span class="font-medium text-center text-white text-xl mobile-l:text-2xl">Видео о клинике</span>
+                            </div>
+                        </div>
+        
+                        <!-- 2 -->
+                        <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] col-span-2 md:col-span-1 890:col-span-2 xl:col-span-1 xl:pl-10 xl:pb-12 xl:row-span-2">
+                            <img class="absolute top-10 right-7 w-[67px] h-16 md:w-[83px] md:h-20" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Детская
+                                стоматология</h3>
+                        </div>
+        
+                        <!-- 3 -->
+                        <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] h-[180px] col-span-2 md:h-auto xl:col-span-1 md:col-span-1 890:col-span-2 xl:row-span-2 xl:pl-10 xl:pb-12">
+                            <img class="absolute w-[67px] h-16 right-7 top-6 mobile-l:top-9 md:w-[73px] md:h-70" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Терапевти-ческие услуги</h3>
+                        </div>
+        
+                        <!-- 4 -->
+                        <div class="relative flex items-end pb-7 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px] mobile-l:justify-between mobile-l:items-center mobile-l:pb-0">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Ортодонтия</h3>
+                            <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class=" w-[113px] h-10 absolute top-7 right-6 mobile-l:static md:w-[151px] md:h-[50px]">
+                        </div>
+        
+                        <!-- 5 -->
+                        <div class="relative flex items-end h-[180px] pb-7 px-7 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto xl:pl-12 xl:pr-11">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Профессиональная <br>
+                                гигиена полости рта</h3>
+                            <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='absolute top-7 right-6 w-24 h-10 mobile-l:static md:w-[120px] md:h-[50px]'>
+                        </div>
+                        
+                        <!-- 6 -->
+                        <div class="h-[180px] relative flex items-end pb-7 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Имплантация <br>
+                                и хирургия</h3>
+                            <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="absolute w-[67px] h-16 top-7 right-6 mobile-l:static md:w-[73px] md:h-70">
                         </div>
                     </div>
     
-                    <!-- 2 -->
-                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] col-span-2 md:col-span-1 890:col-span-2 xl:col-span-1 xl:pl-10 xl:pb-12 xl:row-span-2">
-                        <img class="absolute top-10 right-7 w-[67px] h-16 md:w-[83px] md:h-20" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Детская
-                            стоматология</h3>
+                    <!-- more-btn -->
+                    <div class="flex justify-center">
+                        <button class="main-btn main-btn--lime">Смотреть все услуги</button>
                     </div>
-    
-                    <!-- 3 -->
-                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] h-[180px] col-span-2 md:h-auto xl:col-span-1 md:col-span-1 890:col-span-2 xl:row-span-2 xl:pl-10 xl:pb-12">
-                        <img class="absolute w-[67px] h-16 right-7 top-6 mobile-l:top-9 md:w-[73px] md:h-70" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Терапевти-ческие услуги</h3>
-                    </div>
-    
-                    <!-- 4 -->
-                    <div class="relative flex items-end pb-7 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px] mobile-l:justify-between mobile-l:items-center mobile-l:pb-0">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Ортодонтия</h3>
-                        <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class=" w-[113px] h-10 absolute top-7 right-6 mobile-l:static md:w-[151px] md:h-[50px]">
-                    </div>
-    
-                    <!-- 5 -->
-                    <div class="relative flex items-end h-[180px] pb-7 px-7 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto xl:pl-12 xl:pr-11">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Профессиональная <br>
-                            гигиена полости рта</h3>
-                        <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='absolute top-7 right-6 w-24 h-10 mobile-l:static md:w-[120px] md:h-[50px]'>
-                    </div>
-                    
-                    <!-- 6 -->
-                    <div class="h-[180px] relative flex items-end pb-7 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Имплантация <br>
-                            и хирургия</h3>
-                        <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="absolute w-[67px] h-16 top-7 right-6 mobile-l:static md:w-[73px] md:h-70">
-                    </div>
-                </div>
-
-                <!-- more-btn -->
-                <div class="flex justify-center">
-                    <button class="main-btn main-btn--lime">Смотреть все услуги</button>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+        <!-- about-clinic -->
+        <section class="pt-8">
+            <div class="container">
+                <!-- content -->
+                <div class="p-5 border border-brand-lime-500 rounded-2xl md:p-8 lg:p-16">
+                    <h2 class="mb-5 md:mb-8">О клинике</h2>
+                    <div class="text-base leading-[26px] text-[#536763] space-y-5 mb-8 md:text-lg">
+                        <p>Clinica Native предлагает широкий спектр стоматологических услуг, включая терапевтическую, ортопедическую и профилактическую стоматологию. Мы используем современные материалы и методы лечения, чтобы помочь нашим пациентам в любой ситуации.</p>
+                        <!-- list -->
+                        <ul class="pl-5 space-y-2.5 md:pl-8 lg:pl-16">
+                            <li>Лечение кариеса, осложненных форм кариеса, некариозных поражений, реставрация зубов, эндодонтическое лечение, отбеливание зубов и консервативное лечение воспалительных заболеваний пародонта.</li>
+                            <li>Современные методы диагностики (стоматологический микроскоп EXTARO 300 и радиовизографический и рентгеновский стоматологический интраоральный аппарат)</li>
+                            <li>Профессиональное отбеливание зубов системой Flash</li>
+                            <li>Лечение воспалительных заболеваний пародонта с использованием аппаратов Vector Paro Pro и диодного лазера Doctor Smile.</li>
+                        </ul>
+                        <p>План лечения подбирается индивидуально специалистом в зависимости от клинических проявлений заболевания, возраста пациента и других факторов.</p>
+                    </div>
+                    <!-- link -->
+                    <a class="inline-flex items-center main-btn main-btn--lime px-[30px] py-[18px] text-[#393939] hover:text-white" href="#">
+                        <span class="font-roboto text-lg leading-[21px]">Подробнее</span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- js -->
