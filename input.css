@@ -85,7 +85,7 @@
   .about-section--list-item::before {
     content: "";
     @apply size-5 mt-1 bg-cover bg-no-repeat shrink-0;
-    background: url(../images/check.svg);
+    background: url(../images/icons/check.svg);
   }
 }
 
