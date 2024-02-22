@@ -32,9 +32,14 @@ module.exports = {
         base: "1390px",
       },
       backgroundImage:{
+<<<<<<< HEAD
         videoBg: "url('../images/video-bg.jpg')",
         faqBg: "url('../images/faq-bg.jpg')",
         bannerBg: "url('../images/clinic-native.png')",
+=======
+        videoBg: "url('./images/video-bg.jpg')",
+        bannerBg: "url('./images/clinic-native.png')",
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706
       },
       spacing:{
         50: '50px',

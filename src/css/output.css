@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,11 +32,9 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
 */
 
-html,
-:host {
+html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -46,14 +44,12 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
 }
 
 /*
@@ -125,10 +121,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -137,12 +131,8 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
+  /* 2 */
 }
 
 /*
@@ -871,6 +861,7 @@ input[type="search"]::-webkit-search-cancel-button,
   margin-bottom: 0.625rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -887,14 +878,19 @@ input[type="search"]::-webkit-search-cancel-button,
   margin-bottom: 1rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -907,18 +903,24 @@ input[type="search"]::-webkit-search-cancel-button,
   margin-right: 0.5rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .mr-2\.5 {
   margin-right: 0.625rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .mr-5 {
   margin-right: 1.25rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .mt-5 {
   margin-top: 1.25rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .block {
   display: block;
 }
@@ -998,6 +1000,7 @@ input[type="search"]::-webkit-search-cancel-button,
   height: 2.25rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .h-\[118px\] {
   height: 118px;
 }
@@ -1006,6 +1009,8 @@ input[type="search"]::-webkit-search-cancel-button,
   height: 154px;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .h-\[180px\] {
   height: 180px;
 }
@@ -1067,8 +1072,13 @@ input[type="search"]::-webkit-search-cancel-button,
   width: 113px;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .w-\[154px\] {
   width: 154px;
+=======
+.w-\[356px\] {
+  width: 356px;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 }
 
 .w-\[56\%\] {
@@ -1128,8 +1138,13 @@ input[type="search"]::-webkit-search-cancel-button,
   max-width: none;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .max-w-xl {
   max-width: 36rem;
+=======
+.max-w-\[356px\] {
+  max-width: 356px;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 }
 
 .shrink-0 {
@@ -1230,6 +1245,7 @@ input[type="search"]::-webkit-search-cancel-button,
   gap: 2rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .gap-\[30px\] {
   gap: 30px;
 }
@@ -1246,6 +1262,8 @@ input[type="search"]::-webkit-search-cancel-button,
   margin-bottom: calc(0.125rem * var(--tw-space-y-reverse));
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1270,12 +1288,15 @@ input[type="search"]::-webkit-search-cancel-button,
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+<<<<<<< HEAD:src/css/output.css
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1298,10 +1319,13 @@ input[type="search"]::-webkit-search-cancel-button,
   border-radius: 1rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .rounded-3 {
   border-radius: 3px;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .rounded-\[15px\] {
   border-radius: 15px;
 }
@@ -1350,16 +1374,20 @@ input[type="search"]::-webkit-search-cancel-button,
   border-color: rgb(186 223 147 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD:src/css/output.css
 .border-brand-sky-200 {
   --tw-border-opacity: 1;
   border-color: rgb(184 216 235 / var(--tw-border-opacity));
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .bg-\[\#B8D8EB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(184 216 235 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD:src/css/output.css
 .bg-\[\#F6FCFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 252 255 / var(--tw-bg-opacity));
@@ -1374,6 +1402,8 @@ input[type="search"]::-webkit-search-cancel-button,
   background-color: rgb(0 0 0 / 0.25);
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .bg-black\/70 {
   background-color: rgb(0 0 0 / 0.7);
 }
@@ -1408,7 +1438,11 @@ input[type="search"]::-webkit-search-cancel-button,
 }
 
 .bg-bannerBg {
+<<<<<<< HEAD:src/css/output.css
   background-image: url('../images/clinic-native.png');
+=======
+  background-image: url('./images/clinic-native.png');
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 }
 
 .bg-videoBg {
@@ -1429,6 +1463,10 @@ input[type="search"]::-webkit-search-cancel-button,
      object-position: left;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1437,10 +1475,13 @@ input[type="search"]::-webkit-search-cancel-button,
   padding: 0.625rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .p-4 {
   padding: 1rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .p-5 {
   padding: 1.25rem;
 }
@@ -1449,8 +1490,17 @@ input[type="search"]::-webkit-search-cancel-button,
   padding: 1.5rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .p-8 {
   padding: 2rem;
+=======
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 }
 
 .px-6 {
@@ -1466,6 +1516,14 @@ input[type="search"]::-webkit-search-cancel-button,
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
+<<<<<<< HEAD:src/css/output.css
+=======
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 }
 
 .py-2 {
@@ -1488,16 +1546,20 @@ input[type="search"]::-webkit-search-cancel-button,
   padding-bottom: 1.25rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1510,6 +1572,8 @@ input[type="search"]::-webkit-search-cancel-button,
   padding-bottom: 4rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1538,6 +1602,7 @@ input[type="search"]::-webkit-search-cancel-button,
   padding-right: 2.5rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .pt-11 {
   padding-top: 2.75rem;
 }
@@ -1562,12 +1627,29 @@ input[type="search"]::-webkit-search-cancel-button,
   padding-top: 10rem;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .pt-8 {
   padding-top: 2rem;
 }
 
+<<<<<<< HEAD:src/css/output.css
+=======
+.pt-\[243px\] {
+  padding-top: 243px;
+}
+
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .pt-\[86px\] {
   padding-top: 86px;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-11 {
+  padding-top: 2.75rem;
 }
 
 .text-center {
@@ -1659,6 +1741,7 @@ input[type="search"]::-webkit-search-cancel-button,
   line-height: 30px;
 }
 
+<<<<<<< HEAD:src/css/output.css
 .leading-\[34px\] {
   line-height: 34px;
 }
@@ -1667,6 +1750,8 @@ input[type="search"]::-webkit-search-cancel-button,
   line-height: 1;
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .text-\[\#393939\] {
   --tw-text-opacity: 1;
   color: rgb(57 57 57 / var(--tw-text-opacity));
@@ -1677,21 +1762,27 @@ input[type="search"]::-webkit-search-cancel-button,
   color: rgb(83 103 99 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD:src/css/output.css
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .text-brand-emerald-900 {
   --tw-text-opacity: 1;
   color: rgb(21 62 53 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD:src/css/output.css
 .text-brand-lime-500 {
   --tw-text-opacity: 1;
   color: rgb(186 223 147 / var(--tw-text-opacity));
 }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1845,17 +1936,8 @@ input[type="search"]::-webkit-search-cancel-button,
 }
 
 @media (min-width: 375px) {
-  .mobile-m\:max-w-80 {
-    max-width: 20rem;
-  }
-
   .mobile-m\:max-w-none {
     max-width: none;
-  }
-
-  .mobile-m\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -1941,6 +2023,7 @@ input[type="search"]::-webkit-search-cancel-button,
     width: 2rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .\35 20\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1950,6 +2033,8 @@ input[type="search"]::-webkit-search-cancel-button,
     line-height: 2.25rem;
   }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .\35 20\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1983,6 +2068,7 @@ input[type="search"]::-webkit-search-cancel-button,
     width: 2.5rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1991,10 +2077,13 @@ input[type="search"]::-webkit-search-cancel-button,
     gap: 2rem;
   }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .sm\:p-8 {
     padding: 2rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -2006,6 +2095,23 @@ input[type="search"]::-webkit-search-cancel-button,
 
   .sm\:pb-20 {
     padding-bottom: 5rem;
+=======
+  .sm\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .sm\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:pt-50 {
+    padding-top: 50px;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   }
 
   .sm\:pt-10 {
@@ -2035,10 +2141,13 @@ input[type="search"]::-webkit-search-cancel-button,
     grid-column: span 1 / span 1;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .md\:mb-12 {
     margin-bottom: 3rem;
   }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -2137,10 +2246,15 @@ input[type="search"]::-webkit-search-cancel-button,
     gap: 0.625rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+=======
+  .md\:p-8 {
+    padding: 2rem;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   }
 
   .md\:p-12 {
@@ -2151,6 +2265,7 @@ input[type="search"]::-webkit-search-cancel-button,
     padding: 1.5rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .md\:p-8 {
     padding: 2rem;
   }
@@ -2170,6 +2285,8 @@ input[type="search"]::-webkit-search-cancel-button,
     padding-bottom: 0.5rem;
   }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -2180,8 +2297,17 @@ input[type="search"]::-webkit-search-cancel-button,
     padding-bottom: 86px;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .md\:pb-12 {
     padding-bottom: 3rem;
+=======
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   }
 
   .md\:pb-\[91px\] {
@@ -2209,8 +2335,8 @@ input[type="search"]::-webkit-search-cancel-button,
     line-height: 2rem;
   }
 
-  .md\:text-\[32px\] {
-    font-size: 32px;
+  .md\:pt-\[243px\] {
+    padding-top: 243px;
   }
 
   .md\:text-\[56px\] {
@@ -2220,6 +2346,7 @@ input[type="search"]::-webkit-search-cancel-button,
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+<<<<<<< HEAD:src/css/output.css
   }
 
   .md\:text-xl {
@@ -2237,6 +2364,17 @@ input[type="search"]::-webkit-search-cancel-button,
 
   .md\:leading-\[37\.7px\] {
     line-height: 37.7px;
+=======
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:\!leading-\[60px\] {
+    line-height: 60px !important;
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   }
 }
 
@@ -2303,14 +2441,24 @@ input[type="search"]::-webkit-search-cancel-button,
     gap: 0.625rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
   .lg\:gap-5 {
     gap: 1.25rem;
   }
 
+=======
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .lg\:p-16 {
     padding: 4rem;
   }
 
+<<<<<<< HEAD:src/css/output.css
+=======
+  .lg\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+>>>>>>> 08e533573397f84ad7d5a34712a50990fe782706:src/output.css
   .lg\:pl-16 {
     padding-left: 4rem;
   }
