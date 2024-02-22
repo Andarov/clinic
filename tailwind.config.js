@@ -29,10 +29,12 @@ module.exports = {
         30: '30px',
       },
       maxWidth:{
-        base: "1388px",
+        base: "1390px",
       },
       backgroundImage:{
-        videoBg: "url('./images/video-bg.jpg')"
+        videoBg: "url('../images/video-bg.jpg')",
+        faqBg: "url('../images/faq-bg.jpg')",
+        bannerBg: "url('../images/clinic-native.png')",
       },
       spacing:{
         50: '50px',

@@ -36,3 +36,31 @@ document.addEventListener("keydown", (e) => {
     closeNavbar();
   }
 });
+
+const elVideoUrls = document.querySelectorAll('[data-video-url]');
+const elVideoModal = document.querySelector('.js-video-modal');
+const elVideoModalOverlay = document.querySelector('.js-video-modal--overlay');
+const elVideoModalCloseBtn = document.querySelector('.js-video-modal--close-btn');
+const elVideoModalVideo = document.querySelector('.js-video-modal--video');
+
+// set video url
+elVideoUrls.forEach((video) => {
+  const url = video.getAttribute('data-video-url');
+  video.addEventListener('click', () => {
+    elVideoModalVideo.setAttribute('src', url);
+    elVideoModal.style.display = 'flex';
+  });
+});
+const closeVideoModal = () => {
+  elVideoModal.style.display = 'none';
+};
+
+// close modal
+elVideoModalCloseBtn.addEventListener('click', closeVideoModal);
+elVideoModalOverlay.addEventListener('click', closeVideoModal);
+// escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeVideoModal();
+  }
+});

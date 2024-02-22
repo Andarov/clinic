@@ -41,6 +41,10 @@
     @apply text-base text-brand-emerald-900 font-tt-norms;
   }
 
+  h2{
+    @apply text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]
+  }
+
   input {
     @apply w-full bg-white rounded-3 px-5 py-3.5 placeholder:text-brand-lime-700;
   }

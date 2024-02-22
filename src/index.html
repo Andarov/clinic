@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLINICA NATIVE</title>
-
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiperStyles.css">
+    <link rel="stylesheet" href="./css/output.css">
 </head>
+
 <body>
-    
+
     <!-- header -->
     <header class="bg-brand-lime-500 font-roboto">
         <!-- header main content -->
@@ -80,7 +82,7 @@
                     <a href="https://example.com" class="hidden main-btn md:inline-block">Онлайн-запись</a>
 
                     <!-- menu && exit -->
-                     <button class="block js-hamburger-btn z-40 md:hidden">
+                    <button class="block js-hamburger-btn z-40 md:hidden">
                         <img width='28' height='28' src="./images/menu.svg" alt="cross icon" class="w-8 h-8 js-menu-icon">
                         <img width='28' height='28' src="./images/cross.svg" alt="cross icon" class="w-8 h-8 hidden js-cross-icon">
                     </button>
@@ -89,11 +91,11 @@
                     <div class="hidden md:hidden fixed w-full h-full inset-0 bg-black/70 z-10 js-overlay"></div>
 
                     <!-- responsive nav -->
-                    <div class="block fixed top-0 left-0 w-full h-full bg-brand-lime-500 z-30 -translate-x-full js-responsive-nav duration-300  max-w-none mobile-m:max-w-80  md:hidden">
+                    <div
+                        class="block fixed top-0 left-0 w-full h-full bg-brand-lime-500 z-30 -translate-x-full js-responsive-nav duration-300  max-w-none mobile-m:max-w-80  md:hidden">
                         <div class="flex flex-col gap-6 h-full px-6 py-5 overflow-y-auto">
                             <!-- mobile-zapis-link -->
                             <a href="https://example.com" class="main-btn w-full mobile-m:max-w-none justify-center">Онлайн-запись</a>
-
                             <hr class="border-none bg-brand-lime-700 min-h-[1px] w-full">
 
                             <!-- mobile-nav -->
@@ -124,12 +126,14 @@
                                 <div class="flex flex-col gap-5">
                                     <!-- mobile-address -->
                                     <address class="flex items-center not-italic gap-2.5">
-                                        <img width='24' height='24' src="./images/map.svg" alt="map icon" class="w-6 h-6">
+                                        <img width='24' height='24' src="./images/map.svg" alt="map icon"
+                                            class="w-6 h-6">
                                         <span class="text-base leading-30">г. Екатеринбург, ул. Азина, 31</span>
                                     </address>
                                     <!-- mobile-time -->
                                     <div class="flex items-center gap-2.5">
-                                        <img width='24' height='24' src="./images/clock.svg" alt="map icon" class="w-6 h-6">
+                                        <img width='24' height='24' src="./images/clock.svg" alt="map icon"
+                                            class="w-6 h-6">
                                         <span class="text-base leading-30">Пн-Вс 09:00 - 21:00</span>
                                     </div>
                                 </div>
@@ -151,7 +155,8 @@
                                 </li>
                                 <!-- whatsapp -->
                                 <li>
-                                    <a target='_blank' aria-label='whatsapp' title='whatsapp' href="https://whatsapp.com" class="header-social-networks-list-item-link">
+                                    <a target='_blank' aria-label='whatsapp' title='whatsapp'
+                                        href="https://whatsapp.com" class="header-social-networks-list-item-link">
                                         <img width='24' height='24' src="./images/whatsapp.svg" alt="whatsapp" class="w-6 h-6">
                                     </a>
                                 </li>
@@ -168,10 +173,9 @@
             <div class="container">
                 <div class="flex items-center gap-7">
                     <!-- catalog-btn -->
-                    <button class="flex items-center gap-2.5 bg-white py-4 px-6 hover:bg-brand-emerald-900 duration-300 min-w-max hover:text-white">
-                        <svg class='w-6 h-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor" />
-                        </svg>
+                    <button
+                        class="flex items-center gap-2.5 bg-white py-4 px-6 hover:bg-brand-emerald-900 duration-300 min-w-max hover:text-white">
+                        <svg class='w-6 h-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor" /></svg>
                         <span class="hidden uppercase text-15 leading-6 lg:inline">Услуги и цены</span>
                     </button>
                     <!-- catalog-nav -->
@@ -208,8 +212,7 @@
         <div class="container hero-content">
             <div class="max-w-[551px] space-y-7 z-10 relative">
                 <!-- hero-title -->
-                <h2 class="text-3xl leading-10 font-Manrope font-medium 520:text-5xl mobile-l:text-4xl  md:!leading-[60px] md:text-[56px]">30% скидка на профессиональную гигиену полости <br> рта
-                </h2>
+                <h2 class="text-3xl leading-10 font-Manrope font-medium 520:text-5xl mobile-l:text-4xl  md:!leading-[60px] md:text-[56px]">30% скидка на профессиональную гигиену полости <br> рта</h2>
                 <!-- hero-list -->
                 <ul class="list-disc pl-5">
                     <li class="text-lg leading-8">Обычная стоимость 5000 руб.</li>
@@ -219,83 +222,623 @@
                 <a href="#" class="main-btn">Подробнее</a>
             </div>
         </div>
-        
+
         <!-- background image -->
         <img src="./images/hero-bg.png" alt="hero background image" class="absolute inset-y-0 right-0 w-[56%] h-full object-cover object-left" srcset="./images/hero-bg.png 1x, ./images/hero-bg@2x.png 2x">
     </div>
 
     <!-- main -->
-    <main class="py-16 sm:py-20 md:pt-[105px] md:pb-24">
-        <!-- container -->
-        <div class="container">
-            <!-- services top -->
-            <div class="flex items-center mb-8 sm:mb-10">
-                <!-- list-btn -->
-                <button class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
-                    <img width="50" height="50" src="./images/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
-                </button>
-                <!-- service-heading-wrapper -->
-                <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
-                    <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
-                </div>
-            </div>
-    
-            <!-- services-list -->
-            <div>
-                <div class="grid grid-cols-1 mb-11 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2  890:grid-cols-4">
-                    <!-- 1 video -->
-                    <div class="flex justify-center items-center w-full h-full col-span-2 row-span-2 bg-videoBg bg-cover border rounded-[15px] 520:row-span-3">
-                        <div class="flex flex-col items-center">
-                            <button class="mb-1">
-                                <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="w-10 h-10 mobile-l:w-[50px] mobile-l:h-[50px]">
-                            </button>
-                            <span class="font-medium text-center text-white text-xl mobile-l:text-2xl">Видео о клинике</span>
-                        </div>
+    <main class="pt-4 sm:pt-8 md:pt-12">
+        <!-- services -->
+        <section class="py-8 sm:py-10 md:py-14">
+            <!-- container -->
+            <div class="container">
+                <!-- services top -->
+                <div class="flex items-center mb-8 sm:mb-10">
+                    <!-- list-btn -->
+                    <div class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
+                        <img width="50" height="50" src="./images/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
                     </div>
-    
-                    <!-- 2 -->
-                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] col-span-2 md:col-span-1 890:col-span-2 xl:col-span-1 xl:pl-10 xl:pb-12 xl:row-span-2">
-                        <img class="absolute top-10 right-7 w-[67px] h-16 md:w-[83px] md:h-20" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Детская
-                            стоматология</h3>
-                    </div>
-    
-                    <!-- 3 -->
-                    <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] h-[180px] col-span-2 md:h-auto xl:col-span-1 md:col-span-1 890:col-span-2 xl:row-span-2 xl:pl-10 xl:pb-12">
-                        <img class="absolute w-[67px] h-16 right-7 top-6 mobile-l:top-9 md:w-[73px] md:h-70" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Терапевти-ческие услуги</h3>
-                    </div>
-    
-                    <!-- 4 -->
-                    <div class="relative flex items-end pb-7 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px] mobile-l:justify-between mobile-l:items-center mobile-l:pb-0">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Ортодонтия</h3>
-                        <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class=" w-[113px] h-10 absolute top-7 right-6 mobile-l:static md:w-[151px] md:h-[50px]">
-                    </div>
-    
-                    <!-- 5 -->
-                    <div class="relative flex items-end h-[180px] pb-7 px-7 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto xl:pl-12 xl:pr-11">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Профессиональная <br>
-                            гигиена полости рта</h3>
-                        <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='absolute top-7 right-6 w-24 h-10 mobile-l:static md:w-[120px] md:h-[50px]'>
-                    </div>
-                    
-                    <!-- 6 -->
-                    <div class="h-[180px] relative flex items-end pb-7 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto">
-                        <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Имплантация <br>
-                            и хирургия</h3>
-                        <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="absolute w-[67px] h-16 top-7 right-6 mobile-l:static md:w-[73px] md:h-70">
+                    <!-- service-heading-wrapper -->
+                    <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
+                        <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Услуги <span class="hidden mobile-l:inline">стоматологической клиники</span> CLINICA NATIVE</h2>
                     </div>
                 </div>
 
-                <!-- more-btn -->
-                <div class="flex justify-center">
-                    <button class="main-btn main-btn--lime">Смотреть все услуги</button>
+                <!-- services-list -->
+                <div>
+                    <div class="grid grid-cols-1 mb-11 grid-rows-[repeat(4,180px)] gap-5 md:grid-cols-2  890:grid-cols-4">
+                        <!-- 1 video -->
+                        <div class="flex justify-center items-center w-full h-full col-span-2 row-span-2 bg-videoBg bg-cover border rounded-[15px] 520:row-span-3">
+                            <div class="flex flex-col items-center">
+                                <button class="mb-1">
+                                    <img width="50" height="50" src="./images/play.svg" alt="Play btn" class="w-10 h-10 mobile-l:w-[50px] mobile-l:h-[50px]">
+                                </button>
+                                <span class="font-medium text-center text-white text-xl mobile-l:text-2xl">Видео о клинике</span>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] col-span-2 md:col-span-1 890:col-span-2 xl:col-span-1 xl:pl-10 xl:pb-12 xl:row-span-2">
+                            <img class="absolute top-10 right-7 w-[67px] h-16 md:w-[83px] md:h-20" src="./images/teeth-child.svg" alt="teeth-child icon" width="83" height="80">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Детская стоматология</h3>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="relative flex items-end pb-8 pl-8 bg-brand-sky-200 border rounded-[15px] h-[180px] col-span-2 md:h-auto xl:col-span-1 md:col-span-1 890:col-span-2 xl:row-span-2 xl:pl-10 xl:pb-12">
+                            <img class="absolute w-[67px] h-16 right-7 top-6 mobile-l:top-9 md:w-[73px] md:h-70" src="./images/surgery.svg" alt="teeth surgery icon" width="73" height="70">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Терапевти-ческие услуги</h3>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="relative flex items-end pb-7 pl-9 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] h-[180px] mobile-l:justify-between mobile-l:items-center mobile-l:pb-0">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Ортодонтия</h3>
+                            <img src="./images/teeth.svg" alt="Teeth icon" width="151" height="50" class=" w-[113px] h-10 absolute top-7 right-6 mobile-l:static md:w-[151px] md:h-[50px]">
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="relative flex items-end h-[180px] pb-7 px-7 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto xl:pl-12 xl:pr-11">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Профессиональная <br> гигиена полости рта</h3>
+                            <img src="./images/brush.svg" alt="Brush icon" width="120" height="50" class='absolute top-7 right-6 w-24 h-10 mobile-l:static md:w-[120px] md:h-[50px]'>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="h-[180px] relative flex items-end pb-7 pl-8 pr-10 bg-brand-sky-200 col-span-2 border rounded-[15px] mobile-l:items-center mobile-l:justify-between mobile-l:pb-0 890:h-auto">
+                            <h3 class="text-2xl lg:text-[34px] lg:leading-[44px]">Имплантация <br> и хирургия</h3>
+                            <img src="./images/surgery.svg" alt="surgery icon" width="73" height="70" class="absolute w-[67px] h-16 top-7 right-6 mobile-l:static md:w-[73px] md:h-70">
+                        </div>
+                    </div>
+
+                    <!-- more-btn -->
+                    <div class="flex justify-center">
+                        <button class="main-btn main-btn--lime">Смотреть все услуги</button>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- menu -->
+        <section class="pt-16 pb-12">
+            <div class="container">
+                <div class="max-w-[1347px] relative">
+                    <div class="w-full max-w-[1090px] mx-auto">
+                        <!-- menu -->
+                        <div class="menu-swiper overflow-hidden">
+                            <ul class="swiper-wrapper">
+                                <!-- About us -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <img width="154" height="154" src="./images/about-us.jpg" alt="about us icon" class="w-[154px] h-[154px] mb-4 rounded-full">
+                                        <span class="text-xl leading-6">О нас</span>
+                                    </a>
+                                </li>
+                                <!-- Our Doctors -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <img width="154" height="154" src="./images/our-doctors.png" alt="our doctors image" class="w-[154px] h-[154px] mb-4 rounded-full">
+                                        <span class="text-xl leading-6">Наши врачи</span>
+                                    </a>
+                                </li>
+                                <!-- Location -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <img width="154" height="154" src="./images/map.png" alt="map" class="w-[154px] h-[154px] mb-4 rounded-full">
+                                        <span class="text-xl leading-6">Как дойти</span>
+                                    </a>
+                                </li>
+                                <!-- Before / After -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <div width="154" height="154" class="relative w-[154px] h-[154px] mb-4">
+                                            <img src="./images/before.jpg" alt="before" class="rounded-t-full mb-0.5">
+                                            <img src="./images/up-down.svg" alt="up and down arrow" class="absolute left-14 top-1/3 p-2.5 bg-sky-200 rounded-full">
+                                            <img src="./images/after.jpg" alt="after" class="rounded-b-full">
+                                        </div>
+                                        <span class="text-xl leading-6">До/После</span>
+                                    </a>
+                                </li>
+                                <!-- Reviews -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <img width="154" height="154" src="./images/reviews.jpg" alt="map" class="w-[154px] h-[154px] mb-4 rounded-full">
+                                        <span class="text-xl leading-6">Отзывы</span>
+                                    </a>
+                                </li>
+                                <!-- Our Doctors (for work slider loop) -->
+                                <li class="swiper-slide">
+                                    <a href="#" class="flex flex-col items-center justify-center">
+                                        <img width="154" height="154" src="./images/our-doctors.png" alt="our doctors image" class="w-[154px] h-[154px] mb-4 rounded-full">
+                                        <span class="text-xl leading-6">Наши врачи</span>
+                                    </a>
+                                </li>
+                            </ul>
+        
+                            <button class="swipper-button-next absolute top-1/3 right-0 z-10 disabled:block">
+                                <img src="./images/arrow-right.svg" alt="arrow right">
+                            </button>
+        
+                            <button class="swipper-button-prev absolute top-1/3 left-0 z-10 disabled:block">
+                                <img class="rotate-180" src="./images/arrow-right.svg" alt="arrow left">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- offers -->
+        <section class="pt-12 pb-24">
+            <div class="container">
+                <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
+                    <!-- 1 -->
+                    <div class="rounded-2xl p-8 border border-[#D1E4EF] group">
+                        <h3 class="text-2xl leading-[34px] mb-3.5">Рассрочка на услуги</h3>
+                        <p class="text-lg leading-[26px] mb-14">Аппаратное отбеливание зубов с применением геля – один из самых эффективных способов сделать свою улыбку белоснежной.</p>
+                        <!-- link -->
+                        <a class="inline-flex items-center main-btn main-btn--lime px-[30px] py-[18px] text-[#393939] hover:text-white group-hover:border-brand-lime-500" href="#">
+                            <span class="font-roboto text-lg leading-[21px]">Подробнее</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="rounded-2xl p-8 border border-[#D1E4EF] ">
+                        <h3 class="text-2xl leading-[34px] mb-3.5">Оформление справки на налоговый вычет</h3>
+                        <p class="text-lg leading-[26px] mb-12">Приглашаем школьников и студентов на бесплатный осмотр полости рта и консультацию врача-стоматолога.</p>
+                        <!-- link -->
+                        <a class="inline-flex items-center main-btn main-btn--lime px-[30px] py-[18px] text-[#393939] hover:text-white" href="#">
+                            <span class="font-roboto text-lg leading-[21px]">Подробнее</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="rounded-2xl p-8 border border-[#D1E4EF] ">
+                        <h3 class="text-2xl leading-[34px] mb-3.5">Лечение по ДМС</h3>
+                        <p class="text-lg leading-[26px] mb-20">Приглашаем школьников и студентов на бесплатный осмотр полости рта и консультацию врача-стоматолога.</p>
+                        <!-- link -->
+                        <a class="inline-flex items-center main-btn main-btn--lime px-[30px] py-[18px] text-[#393939] hover:text-white" href="#">
+                            <span class="font-roboto text-lg leading-[21px]">Подробнее</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular services -->
+        <section class="pt-24 pb-24 bg-brand-sky-200">
+            <div class="container flex flex-col items-center justify-center lg:flex-row lg:justify-between">
+                <!-- section-title -->
+                <div class="mb-10">
+                    <h2 class="font-medium text-[56px] leading-none mb-12">Популярные <br> услуги</h2>
+                    <!-- link -->
+                    <a class="inline-flex items-center main-btn main-btn px-[30px] py-[18px] text-[#393939] hover:text-white" href="#">
+                        <span class="font-roboto text-lg leading-[21px]">Все услуги</span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                </div>
+                <!-- services-list -->
+                <ul class="w-full max-w-xl space-y-0.5">
+                    <!-- 1 -->
+                    <li class="w-full rounded-3 bg-white hover:bg-brand-lime-500 hover:text-white">
+                        <a href="#" class="flex items-center justify-between px-7 py-5 text-brand-lime-500 hover:text-white">
+                            <h4 class="text-base text-black leading-2.5 md:text-xl md:leading-30">Лечение кариеса</h4>
+                            <div class="flex items-center">
+                                <span class="hidden mr-2.5 font-medium text-xl text-black leading-30 md:block ">6000 руб.</span>
+                                <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.87503 15C1.87503 15.2486 1.9738 15.4871 2.14962 15.6629C2.32543 15.8387 2.56389 15.9375 2.81253 15.9375L24.9244 15.9375L19.0238 21.8362C18.8477 22.0122 18.7488 22.251 18.7488 22.5C18.7488 22.7489 18.8477 22.9877 19.0238 23.1637C19.1998 23.3397 19.4386 23.4386 19.6875 23.4386C19.9365 23.4386 20.1752 23.3397 20.3513 23.1637L27.8513 15.6637C27.9386 15.5766 28.0079 15.4732 28.0551 15.3593C28.1024 15.2454 28.1267 15.1233 28.1267 15C28.1267 14.8766 28.1024 14.7545 28.0551 14.6407C28.0079 14.5268 27.9386 14.4233 27.8513 14.3362L20.3513 6.83621C20.2641 6.74905 20.1606 6.67991 20.0468 6.63273C19.9329 6.58556 19.8108 6.56128 19.6875 6.56128C19.4386 6.56128 19.1998 6.66018 19.0238 6.83621C18.8477 7.01225 18.7488 7.25101 18.7488 7.49996C18.7488 7.74892 18.8477 7.98768 19.0238 8.16371L24.9244 14.0625L2.81253 14.0625C2.56389 14.0625 2.32543 14.1612 2.14962 14.3371C1.9738 14.5129 1.87503 14.7513 1.87503 15Z"
+                                    fill="currentColor" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="w-full rounded-3 bg-white hover:bg-brand-lime-500 hover:text-white">
+                        <a href="#" class="flex items-center justify-between px-7 py-5 text-brand-lime-500 hover:text-white">
+                            <h4 class="text-base text-black leading-2.5 md:text-xl md:leading-30">Консультация стоматолога-терапевта</h4>
+                            <div class="flex items-center">
+                                <span class="hidden mr-2.5 font-medium text-xl text-black leading-30 md:block">3000 руб.</span>
+                                <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.87503 15C1.87503 15.2486 1.9738 15.4871 2.14962 15.6629C2.32543 15.8387 2.56389 15.9375 2.81253 15.9375L24.9244 15.9375L19.0238 21.8362C18.8477 22.0122 18.7488 22.251 18.7488 22.5C18.7488 22.7489 18.8477 22.9877 19.0238 23.1637C19.1998 23.3397 19.4386 23.4386 19.6875 23.4386C19.9365 23.4386 20.1752 23.3397 20.3513 23.1637L27.8513 15.6637C27.9386 15.5766 28.0079 15.4732 28.0551 15.3593C28.1024 15.2454 28.1267 15.1233 28.1267 15C28.1267 14.8766 28.1024 14.7545 28.0551 14.6407C28.0079 14.5268 27.9386 14.4233 27.8513 14.3362L20.3513 6.83621C20.2641 6.74905 20.1606 6.67991 20.0468 6.63273C19.9329 6.58556 19.8108 6.56128 19.6875 6.56128C19.4386 6.56128 19.1998 6.66018 19.0238 6.83621C18.8477 7.01225 18.7488 7.25101 18.7488 7.49996C18.7488 7.74892 18.8477 7.98768 19.0238 8.16371L24.9244 14.0625L2.81253 14.0625C2.56389 14.0625 2.32543 14.1612 2.14962 14.3371C1.9738 14.5129 1.87503 14.7513 1.87503 15Z"
+                                    fill="currentColor" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="w-full rounded-3 bg-white hover:bg-brand-lime-500 hover:text-white">
+                        <a href="#" class="flex items-center justify-between px-7 py-5 text-brand-lime-500 hover:text-white">
+                            <h4 class="text-base text-black leading-2.5 md:text-xl md:leading-30">Консультация детского стоматолога</h4>
+                            <div class="flex items-center">
+                                <span class="hidden mr-2.5 font-medium text-xl text-black leading-30 md:block">3000 руб.</span>
+                                <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.87503 15C1.87503 15.2486 1.9738 15.4871 2.14962 15.6629C2.32543 15.8387 2.56389 15.9375 2.81253 15.9375L24.9244 15.9375L19.0238 21.8362C18.8477 22.0122 18.7488 22.251 18.7488 22.5C18.7488 22.7489 18.8477 22.9877 19.0238 23.1637C19.1998 23.3397 19.4386 23.4386 19.6875 23.4386C19.9365 23.4386 20.1752 23.3397 20.3513 23.1637L27.8513 15.6637C27.9386 15.5766 28.0079 15.4732 28.0551 15.3593C28.1024 15.2454 28.1267 15.1233 28.1267 15C28.1267 14.8766 28.1024 14.7545 28.0551 14.6407C28.0079 14.5268 27.9386 14.4233 27.8513 14.3362L20.3513 6.83621C20.2641 6.74905 20.1606 6.67991 20.0468 6.63273C19.9329 6.58556 19.8108 6.56128 19.6875 6.56128C19.4386 6.56128 19.1998 6.66018 19.0238 6.83621C18.8477 7.01225 18.7488 7.25101 18.7488 7.49996C18.7488 7.74892 18.8477 7.98768 19.0238 8.16371L24.9244 14.0625L2.81253 14.0625C2.56389 14.0625 2.32543 14.1612 2.14962 14.3371C1.9738 14.5129 1.87503 14.7513 1.87503 15Z"
+                                    fill="currentColor" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="w-full rounded-3 bg-white hover:bg-brand-lime-500 hover:text-white">
+                        <a href="#" class="flex items-center justify-between px-7 py-5 text-brand-lime-500 hover:text-white">
+                            <h4 class="text-base text-black leading-2.5 md:text-xl md:leading-30">Комплексная профгигиена полости рта</h4>
+                            <div class="flex items-center">
+                                <span class="hidden mr-2.5 font-medium text-xl text-black leading-30 md:block">2000 руб.</span>
+                                <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.87503 15C1.87503 15.2486 1.9738 15.4871 2.14962 15.6629C2.32543 15.8387 2.56389 15.9375 2.81253 15.9375L24.9244 15.9375L19.0238 21.8362C18.8477 22.0122 18.7488 22.251 18.7488 22.5C18.7488 22.7489 18.8477 22.9877 19.0238 23.1637C19.1998 23.3397 19.4386 23.4386 19.6875 23.4386C19.9365 23.4386 20.1752 23.3397 20.3513 23.1637L27.8513 15.6637C27.9386 15.5766 28.0079 15.4732 28.0551 15.3593C28.1024 15.2454 28.1267 15.1233 28.1267 15C28.1267 14.8766 28.1024 14.7545 28.0551 14.6407C28.0079 14.5268 27.9386 14.4233 27.8513 14.3362L20.3513 6.83621C20.2641 6.74905 20.1606 6.67991 20.0468 6.63273C19.9329 6.58556 19.8108 6.56128 19.6875 6.56128C19.4386 6.56128 19.1998 6.66018 19.0238 6.83621C18.8477 7.01225 18.7488 7.25101 18.7488 7.49996C18.7488 7.74892 18.8477 7.98768 19.0238 8.16371L24.9244 14.0625L2.81253 14.0625C2.56389 14.0625 2.32543 14.1612 2.14962 14.3371C1.9738 14.5129 1.87503 14.7513 1.87503 15Z"
+                                    fill="currentColor" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 5 -->
+                    <li class="w-full rounded-3 bg-white hover:bg-brand-lime-500 hover:text-white">
+                        <a href="#" class="flex items-center justify-between px-7 py-5 text-brand-lime-500 hover:text-white">
+                            <h4 class="text-base text-black leading-2.5 md:text-xl md:leading-30">Изготовление и установка металлокерамической коронки</h4>
+                            <div class="flex items-center">
+                                <span class="hidden mr-2.5 font-medium text-xl text-black leading-30 md:block">20000 руб.</span>
+                                <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.87503 15C1.87503 15.2486 1.9738 15.4871 2.14962 15.6629C2.32543 15.8387 2.56389 15.9375 2.81253 15.9375L24.9244 15.9375L19.0238 21.8362C18.8477 22.0122 18.7488 22.251 18.7488 22.5C18.7488 22.7489 18.8477 22.9877 19.0238 23.1637C19.1998 23.3397 19.4386 23.4386 19.6875 23.4386C19.9365 23.4386 20.1752 23.3397 20.3513 23.1637L27.8513 15.6637C27.9386 15.5766 28.0079 15.4732 28.0551 15.3593C28.1024 15.2454 28.1267 15.1233 28.1267 15C28.1267 14.8766 28.1024 14.7545 28.0551 14.6407C28.0079 14.5268 27.9386 14.4233 27.8513 14.3362L20.3513 6.83621C20.2641 6.74905 20.1606 6.67991 20.0468 6.63273C19.9329 6.58556 19.8108 6.56128 19.6875 6.56128C19.4386 6.56128 19.1998 6.66018 19.0238 6.83621C18.8477 7.01225 18.7488 7.25101 18.7488 7.49996C18.7488 7.74892 18.8477 7.98768 19.0238 8.16371L24.9244 14.0625L2.81253 14.0625C2.56389 14.0625 2.32543 14.1612 2.14962 14.3371C1.9738 14.5129 1.87503 14.7513 1.87503 15Z"
+                                    fill="currentColor" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section class="bg-[#F6FCFF] pt-8 pb-16 sm:pt-10 sm:pb-20 md:pt-12 md:pb-[91px]">
+            <!-- container -->
+            <div class="container mb-6 md:mb-8">
+                <!-- section header -->
+                <div class="flex gap-4 mb-8 sm:mb-10 md:mb-12 sm:gap-8">
+                    <img width="70" height="70" src="./images/message.svg" alt="message" class="size-11 aspect-square 520:size-[52px] sm:size-[60px] md:size-[70px]">
+
+                    <div class="flex grow items-center justify-between gap-2.5 mt-au py-[11 border-b-[3px] border-brand-lime-500">
+                        <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Отзывы</h2>
+                        <!-- btn prev & next -->
+                        <div class="flex gap-10">
+                            <button aria-label="button prev" class="reviews-swiper--button-prev disabled:opacity-50">
+                                <img width="30" height="30" src="./images/arrow-right.svg" alt="arrow left" class="size-6 sm:size-7 md:size-[30px] rotate-180">
+                            </button>
+                            <button aria-label="button next" class="reviews-swiper--button-next disabled:opacity-50">
+                                <img width="30" height="30" src="./images/arrow-right.svg" alt="arrow right" class="size-6 sm:size-7 md:size-[30px]">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- swiper -->
+                <div class="reviews-swiper overflow-hidden h-[410px mb-8 sm:mb-10 md:mb-12 pb-1 sm:h-[440px]">
+                    <!-- swiper wrapper -->
+                    <ul class="swiper-wrapper flex items-stretch h-full">
+                        <!-- 1 -->
+                        <li class="swiper-slide js-reviews-swiper--slide grid grid-cols-1 gap-[30px] bg-white border border-[#D1E4EF] rounded-[15px] p-6 gap4 hover:border-[3px] hover:border-brand-lime-500 h-full 520:grid-cols-2 xl:p-10 xl:gap-[30px]">
+                            <!-- video src wrapper -->
+                            <div data-video-url="./video/video1.mp4" class="flex overflow-hidden items-center justify-center h-[280px] bg-brand-lime-500 rounded-3 cursor-pointer text-white hover:text-brand-lime-500 mobile-l:h-[400px] 520:h-full xl:h-[354px]">
+                                <img width="280" height="354" src="./images/sergey-ivanov.jpg" alt="Sergey Ivanov" class="w-full h-full object-cover rounded-3">
+                                <svg class="absolute w-[70px] h-[70px]" width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M57.375 8.75H13.625C11.2088 8.75 9.25 10.7088 9.25 13.125V56.875C9.25 59.2912 11.2088 61.25 13.625 61.25H57.375C59.7912 61.25 61.75 59.2912 61.75 56.875V13.125C61.75 10.7088 59.7912 8.75 57.375 8.75Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.4792 35V23.6338L37.323 29.3169L47.1667 35L37.323 40.6832L27.4792 46.3663V35Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <!-- body -->
+                            <div class="space-y-2.5">
+                                <p class="text-lg leading-[26px] text-[#536763]">Есть врачи "дай бог", есть врачи "с богом", а Антропов Василий Дмитриевич - врач "от бога". Такого приема я не видела даже в платных клиниках! Не только отличный специалист, но и человечный человек, осталось ощущение, что в нашей медицине всё прекрасно!</p>
+                                <h3 class="text-lg leading-[30px] font-roboto capitalize">Сергей Иванов</h3>
+                            </div>
+                        </li>
+                        <!-- 2 -->
+                        <li class="swiper-slide js-reviews-swiper--slide grid grid-cols-1 gap-[30px] bg-white border border-[#D1E4EF] rounded-[15px] p-6 gap4 hover:border-[3px] hover:border-brand-lime-500 h-full 520:grid-cols-2 xl:p-10 xl:gap-[30px]">
+                            <!-- video src wrapper -->
+                            <div data-video-url="./video/video2.mp4" class="flex overflow-hidden items-center justify-center h-[280px] bg-brand-lime-500 rounded-3 cursor-pointer text-white hover:text-brand-lime-500 mobile-l:h-[400px] 520:h-full xl:h-[354px]">
+                                <img width="280" height="354" src="./images/elena.jpg" alt="Elene Menshova" class="w-full h-full object-cover rounded-3">
+                                <svg class="absolute w-[70px] h-[70px]" width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M57.375 8.75H13.625C11.2088 8.75 9.25 10.7088 9.25 13.125V56.875C9.25 59.2912 11.2088 61.25 13.625 61.25H57.375C59.7912 61.25 61.75 59.2912 61.75 56.875V13.125C61.75 10.7088 59.7912 8.75 57.375 8.75Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.4792 35V23.6338L37.323 29.3169L47.1667 35L37.323 40.6832L27.4792 46.3663V35Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <!-- body -->
+                            <div class="space-y-2.5">
+                                <p class="text-lg leading-[26px] text-[#536763]">Обратилась с болью в зубе, рот не могла открыть, даже ела с трудом. После осмотра был вынес вердикт: вреда от зуба мудрости больше, чем пользы. Решили удалять. Кристина очень тщательно следила за состоянием, уточняла как я реагирую на анестезию и т. д.</p>
+                                <h3 class="text-lg leading-[30px] font-roboto capitalize">Елена Меньшова</h3>
+                            </div>
+                        </li>
+                        <!-- 3 -->
+                        <li class="swiper-slide js-reviews-swiper--slide grid grid-cols-1 gap-[30px] bg-white border border-[#D1E4EF] rounded-[15px] p-6 gap4 hover:border-[3px] hover:border-brand-lime-500 h-full 520:grid-cols-2 xl:p-10 xl:gap-[30px]">
+                            <!-- video src wrapper -->
+                            <div data-video-url="./video/video1.mp4" class="flex overflow-hidden items-center justify-center h-[280px] bg-brand-lime-500 rounded-3 cursor-pointer text-white hover:text-brand-lime-500 mobile-l:h-[400px] 520:h-full xl:h-[354px]">
+                                <img width="280" height="354" src="./images/sergey-ivanov.jpg" alt="Sergey Ivanov" class="w-full h-full object-cover rounded-3">
+                                <svg class="absolute w-[70px] h-[70px]" width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M57.375 8.75H13.625C11.2088 8.75 9.25 10.7088 9.25 13.125V56.875C9.25 59.2912 11.2088 61.25 13.625 61.25H57.375C59.7912 61.25 61.75 59.2912 61.75 56.875V13.125C61.75 10.7088 59.7912 8.75 57.375 8.75Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.4792 35V23.6338L37.323 29.3169L47.1667 35L37.323 40.6832L27.4792 46.3663V35Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <!-- body -->
+                            <div class="space-y-2.5">
+                                <p class="text-lg leading-[26px] text-[#536763]">Есть врачи "дай бог", есть врачи "с богом", а Антропов Василий Дмитриевич - врач "от бога". Такого приема я не видела даже в платных клиниках! Не только отличный специалист, но и человечный человек, осталось ощущение, что в нашей медицине всё прекрасно!</p>
+                                <h3 class="text-lg leading-[30px] font-roboto capitalize">Сергей Иванов</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- swiper pagination -->
+                <div class="reviews-swiper--swiper-pagination"></div>
+            </div>
+
+            <!-- sub content -->
+            <div class="container space-y-6 md:space-y-7">
+                <h3 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Оставить свой отзыв:</h3>
+                <ul class="grid grid-cols-1 gap-6 520:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-5 xl:grid-cols-5 xl:gap-[30px]">
+                    <!-- 1 -->
+                    <li class="flex flex-col items-center space-y-5">
+                        <!-- logo -->
+                        <div class="w-full max-w-[244px] h-[118px] bg-white border border-[#D1E4EF] rounded-[15px] flex justify-center items-center group cursor-pointer transition-all">
+                            <img class="filter grayscale group-hover:grayscale-0 duration-300" src="./images/prodoktorov.svg" alt="ProDoktorov">
+                        </div>
+                        <!-- rate -->
+                        <div class="flex gap-3.5">
+                            <p class="text-[#536763]">
+                                <span>4.7</span>
+                                <span>/</span>
+                                <span>5</span>
+                            </p>
+                            <!-- stars -->
+                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z" fill="#BADF93" />
+                                <path d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z" fill="#BADF93" />
+                                <path d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z" fill="#BADF93" />
+                                <path d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z" fill="#BADF93" />
+                                <path d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z" fill="#DDDDDD" />
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li class="flex flex-col items-center gap-5">
+                        <a href="#"
+                            class="block w-full h-[118px] bg-white border border-[#D1E4EF] rounded-[15px] filter grayscale hover:grayscale-0 transition-all">
+                            <span class="flex w-full h-full items-center justify-center">
+                                <img width="115" height="40" src="./images/google.png" alt="google logo"
+                                    class="w-[px] h-[px]">
+                            </span>
+                        </a>
+                        <div class="flex gap-3.5">
+                            <p class="text-[#536763]">
+                                <span>5</span>
+                                <span>/</span>
+                                <span>5</span>
+                            </p>
+                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z"
+                                    fill="#BADF93" />
+                            </svg>
+
+                        </div>
+                    </li>
+                    <li class="flex flex-col items-center gap-5">
+                        <a href="#"
+                            class="block w-full h-[118px] bg-white border border-[#D1E4EF] rounded-[15px] filter grayscale hover:grayscale-0 transition-all">
+                            <span class="flex w-full h-full items-center justify-center">
+                                <img width="104" height="50" src="./images/2GIS.png" alt="two gis logo"
+                                    class="w-[px] h-[px]">
+                            </span>
+                        </a>
+                        <div class="flex gap-3.5">
+                            <p class="text-[#536763]">
+                                <span>4.7</span>
+                                <span>/</span>
+                                <span>5</span>
+                            </p>
+                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z"
+                                    fill="#DDDDDD" />
+                            </svg>
+
+                        </div>
+                    </li>
+                    <li class="flex flex-col items-center gap-5">
+                        <a href="#"
+                            class="block w-full h-[118px] bg-white border border-[#D1E4EF] rounded-[15px] filter grayscale hover:grayscale-0 transition-all">
+                            <span class="flex w-full h-full items-center justify-center">
+                                <img width="113" height="92" src="./images/Yandex.png" alt="yandex logo"
+                                    class="w-[px] h-[px]">
+                            </span>
+                        </a>
+                        <div class="flex gap-3.5">
+                            <p class="text-[#536763]">
+                                <span>4.7</span>
+                                <span>/</span>
+                                <span>5</span>
+                            </p>
+                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z"
+                                    fill="#DDDDDD" />
+                            </svg>
+
+                        </div>
+                    </li>
+                    <li class="flex flex-col items-center gap-5">
+                        <a href="#"
+                            class="block w-full h-[118px] bg-white border border-[#D1E4EF] rounded-[15px] filter grayscale hover:grayscale-0 transition-all">
+                            <span class="flex w-full h-full items-center justify-center">
+                                <img width="121" height="46" src="./images/zoon.jfif" alt="zoon logo"
+                                    class="w-[px] h-[px]">
+                            </span>
+                        </a>
+                        <div class="flex gap-3.5">
+                            <p class="text-[#536763]">
+                                <span>4.7</span>
+                                <span>/</span>
+                                <span>5</span>
+                            </p>
+                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z"
+                                    fill="#BADF93" />
+                                <path
+                                    d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z"
+                                    fill="#DDDDDD" />
+                            </svg>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- video modal -->
+        <div style="display: none;"
+            class="js-video-modal flex fixed z-10 w-full min-h-screen top-0 right-0 left-0 bottom-0 items-center justify-center">
+            <!-- overlay -->
+            <div class="js-video-modal--overlay bg-black/80 w-full h-full z-0"></div>
+
+            <!-- video -->
+            <video width="768" height="432" controls autoplay src="./video/video1.mp4"
+                class="js-video-modal--video js absolute w-full h-auto bg-black aspect-video md:w-[768px]">
+            </video>
+
+            <!-- close modal -->
+            <button
+                class="js-video-modal--close-btn flex absolute bg-black/25 items-center justify-center top-0 right-0 p-2 text-white/70 hover:text-white md:px-8 md:py-2">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 md:w-7 md:h-7">
+                    <path class="transition-colors" d="M19 5L4.99998 19M5.00001 5L19 19" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
+
+        <!-- FAQ -->
+        <section class="pb-8 pt-11">
+            <div class="container">
+                <div class="flex items-end bg-bannerBg p-5 pt-40 rounded-[15px] sm:p-8 sm:pt-50 md:p-12 md:pt-[243px]">
+                    <!-- faq-list -->
+                    <ul class="space-y-1">
+                        <li class="w-full max-w-[356px] flex items-center p-4 bg-[#B8D8EB] rounded-[15px] md:p-6">
+                            <span class="w-9 h-9 inline-flex justify-center items-center bg-white rounded-full shrink-0 mr-5">
+                                <img src="./images/tick2.svg" alt="">
+                            </span>
+
+                            <h3 class="text-lg text-brand-emerald-900 font-medium sm:text-xl md:text-2xl">Высокое качество лечения</h3>
+                        </li>
+                        <li class="w-full max-w-[356px] flex items-center p-4 bg-[#B8D8EB] rounded-[15px] md:p-6">
+                            <span class="w-9 h-9 inline-flex justify-center items-center bg-white rounded-full shrink-0 mr-5">
+                                <img src="./images/tick2.svg" alt="">
+                            </span>
+
+                            <h3 class="text-lg text-brand-emerald-900 font-medium sm:text-xl md:text-2xl">Гарантия результата</h3>
+                        </li>
+                        <li class="w-full max-w-[356px] flex items-center p-4 bg-[#B8D8EB] rounded-[15px] md:p-6">
+                            <span class="w-9 h-9 inline-flex justify-center items-center bg-white rounded-full shrink-0 mr-5">
+                                <img src="./images/tick2.svg" alt="">
+                            </span>
+
+                            <h3 class="text-lg text-brand-emerald-900 font-medium sm:text-xl md:text-2xl">Современные методы диагностики</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- about-clinic -->
+        <section class="pt-8">
+            <div class="container">
+                <!-- content -->
+                <div class="p-5 border border-brand-lime-500 rounded-2xl md:p-8 lg:p-16">
+                    <h2 class="mb-5 md:mb-8">О клинике</h2>
+                    <div class="text-base leading-[26px] text-[#536763] space-y-5 mb-8 md:text-lg">
+                        <p>Clinica Native предлагает широкий спектр стоматологических услуг, включая терапевтическую, ортопедическую и профилактическую стоматологию. Мы используем современные материалы и методы лечения, чтобы помочь нашим пациентам в любой ситуации.</p>
+                        <!-- list -->
+                        <ul class="pl-5 space-y-2.5 md:pl-8 lg:pl-16">
+                            <li>Лечение кариеса, осложненных форм кариеса, некариозных поражений, реставрация зубов, эндодонтическое лечение, отбеливание зубов и консервативное лечение воспалительных заболеваний пародонта.</li>
+                            <li>Современные методы диагностики (стоматологический микроскоп EXTARO 300 и радиовизографический и рентгеновский стоматологический интраоральный аппарат)</li>
+                            <li>Профессиональное отбеливание зубов системой Flash</li>
+                            <li>Лечение воспалительных заболеваний пародонта с использованием аппаратов Vector Paro Pro и диодного лазера Doctor Smile.</li>
+                        </ul>
+                        <p>План лечения подбирается индивидуально специалистом в зависимости от клинических проявлений заболевания, возраста пациента и других факторов.</p>
+                    </div>
+                    <!-- link -->
+                    <a class="inline-flex items-center main-btn main-btn--lime px-[30px] py-[18px] text-[#393939] hover:text-white" href="#">
+                        <span class="font-roboto text-lg leading-[21px]">Подробнее</span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 16.3333L15.8333 5.5M15.8333 5.5V15.9M15.8333 5.5H5.43333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- js -->
-    <script src="./main.js"></script>
+    <script type="module" src="./js/swipper.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>

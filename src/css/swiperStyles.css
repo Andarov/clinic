@@ -1,0 +1,24 @@
+.reviews-swiper--swiper-pagination,
+.doctors-section-swiper--swiper-pagination {
+    display: flex;
+    position: static;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+:is(.reviews-swiper--swiper-pagination, .doctors-section-swiper--swiper-pagination) .swiper-pagination-bullet {
+    position: static;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    opacity: 1 !important;
+    border: 1px solid #B8D8EB;
+    margin: 0 !important;
+    transform: translate(0px);
+}
+
+:is(.reviews-swiper--swiper-pagination, .doctors-section-swiper--swiper-pagination) .swiper-pagination-bullet-active {
+    background: #B8D8EB;
+}
