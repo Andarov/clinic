@@ -3,16 +3,16 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      colors:{
-        brand:{
-          lime:{
+      colors: {
+        brand: {
+          lime: {
             500: '#BADF93',
             700: '#9EBD7E'
           },
           sky: {
             200: '#B8D8EB'
           },
-          emerald:{
+          emerald: {
             900: '#153E35',
           }
         }
@@ -21,26 +21,27 @@ module.exports = {
         'roboto': ["Roboto", "sans-serif"],
         'manrope': ["Manrope", "sans-serif"],
         'tt-norms': ["TT Norms", "sans-serif"]
-      },    
+      },
       fontSize: {
         15: '15px',
       },
       lineHeight: {
         30: '30px',
       },
-      maxWidth:{
+      maxWidth: {
         base: "1390px",
       },
-      backgroundImage:{
+      backgroundImage: {
         videoBg: "url('../images/video-bg.jpg')",
         faqBg: "url('../images/faq-bg.jpg')",
         bannerBg: "url('../images/clinic-native.png')",
       },
-      spacing:{
+      spacing: {
         50: '50px',
       },
       borderRadius: {
-        3: '3px'
+        3: '3px',
+        15: '15px',
       },
     },
 
@@ -53,7 +54,7 @@ module.exports = {
       '890': '890px',
       'lg': '1024px',
       'xl': '1280px',
-    } 
+    }
   },
   plugins: [],
 }
