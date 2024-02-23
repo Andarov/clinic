@@ -9,9 +9,9 @@
   font-family: "TT Norms";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/TTNorms-Regular.woff") format("woff"),
-    url("./fonts/TTNorms-Regular.ttf") format("truetype"),
-    url("./fonts/TTNorms-Regular.eot") format("embedded-opentype");
+  src: url("../fonts/TTNorms-Regular.woff") format("woff"),
+    url("../fonts/TTNorms-Regular.ttf") format("truetype"),
+    url("../fonts/TTNorms-Regular.eot") format("embedded-opentype");
   font-display: swap;
 }
 
@@ -19,10 +19,10 @@
   font-family: "TT Norms";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/TTNorms-Medium.woff") format("woff"),
-    url("./fonts/TTNorms-Medium.otf") format("opentype"),
-    url("./fonts/TTNorms-Medium.ttf") format("truetype"),
-    url("./fonts/TTNorms-Medium.eot") format("embedded-opentype");
+  src: url("../fonts/TTNorms-Medium.woff") format("woff"),
+    url("../fonts/TTNorms-Medium.otf") format("opentype"),
+    url("../fonts/TTNorms-Medium.ttf") format("truetype"),
+    url("../fonts/TTNorms-Medium.eot") format("embedded-opentype");
   font-display: swap;
 }
 
@@ -30,9 +30,9 @@
   font-family: "TT Norms";
   font-style: italic;
   font-weight: 500;
-  src: url("./fonts/TTNorms-MediumItalic.woff") format("woff"),
-    url("./fonts/TTNorms-MediumItalic.ttf") format("truetype"),
-    url("./fonts/TTNorms-MediumItalic.eot") format("embedded-opentype");
+  src: url("../fonts/TTNorms-MediumItalic.woff") format("woff"),
+    url("../fonts/TTNorms-MediumItalic.ttf") format("truetype"),
+    url("../fonts/TTNorms-MediumItalic.eot") format("embedded-opentype");
   font-display: swap;
 }
 
