@@ -235,9 +235,10 @@
                 <!-- services top -->
                 <div class="flex items-center mb-8 sm:mb-10">
                     <!-- list-btn -->
-                    <div class="inline-block p-2.5 bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
+                    <div class="flex justify-center items-center w-[70px] h-[70px] bg-brand-lime-500 rounded-full mr-2 min-w-max aspect-square 520:mr-6">
                         <img width="50" height="50" src="./images/icons/list.svg" alt="List icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[50px] md:h-[50px]">
                     </div>
+
                     <!-- service-heading-wrapper -->
                     <div class="border-b-[3px] border-brand-lime-500 grow mr-2 py-2.5 md:py-5">
                         <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Услуги
@@ -506,28 +507,32 @@
 
         <!-- reviews -->
         <section class="bg-[#F6FCFF] py-12 sm:py-16 md:pt-24 md:pb-[91px]">
-            <!-- container -->
-            <div class="container mb-6 md:mb-8">
+            <!-- review (users) -->
+            <div class="container mb-8">
                 <!-- section header -->
-                <div class="flex gap-4 mb-8 sm:mb-10 md:mb-12 sm:gap-8">
-                    <img width="70" height="70" src="./images/icons/message.svg" alt="message" class="size-11 aspect-square 520:size-[52px] sm:size-[60px] md:size-[70px]">
-                    <div class="flex grow items-center justify-between gap-2.5 mt-au py-[11 border-b-[3px] border-brand-lime-500">
+                <div class="flex gap-4 mb-8 sm:mb-10 sm:gap-6 md:mb-12">
+                    <div class="flex justify-center items-center w-[70px] h-[70px] bg-brand-lime-500 rounded-full min-w-max aspect-square">
+                        <img width="33" height="33" src="./images/icons/review.svg" alt="Message icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[33px] md:h-[33px]">
+                    </div>
+
+                    <div class="flex grow items-center justify-between gap-2.5 mt-au py-2 border-b-[3px] border-brand-lime-500 md:py-4">
                         <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Отзывы
                         </h2>
+
                         <!-- btn prev & next -->
-                        <div class="flex gap-10">
+                        <div class="flex gap-5 md:gap-10">
                             <button aria-label="button prev" class="reviews-swiper--button-prev disabled:opacity-50">
-                                <img width="30" height="30" src="./images/icons/arrow-right.svg" alt="arrow left" class="size-6 sm:size-7 md:size-[30px] rotate-180">
+                                <svg class="rotate-180" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 15a.937.937 0 0 0 .938.938h22.111l-5.9 5.898a.938.938 0 1 0 1.327 1.328l7.5-7.5a.936.936 0 0 0 0-1.328l-7.5-7.5a.94.94 0 0 0-1.602.664c0 .249.099.488.275.664l5.9 5.899H2.813a.937.937 0 0 0-.938.937Z" fill="#393939"/></svg>
                             </button>
                             <button aria-label="button next" class="reviews-swiper--button-next disabled:opacity-50">
-                                <img width="30" height="30" src="./images/icons/arrow-right.svg" alt="arrow right" class="size-6 sm:size-7 md:size-[30px]">
+                                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 15a.937.937 0 0 0 .938.938h22.111l-5.9 5.898a.938.938 0 1 0 1.327 1.328l7.5-7.5a.936.936 0 0 0 0-1.328l-7.5-7.5a.94.94 0 0 0-1.602.664c0 .249.099.488.275.664l5.9 5.899H2.813a.937.937 0 0 0-.938.937Z" fill="#393939"/></svg>
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- swiper -->
-                <div class="reviews-swiper overflow-hidden h-[410px mb-8 sm:mb-10 md:mb-12 pb-1 sm:h-[440px]">
+                <div class="reviews-swiper overflow-hidden min-h-[410px] mb-6 sm:mb-10 md:mb-12 md:pb-1">
                     <!-- swiper wrapper -->
                     <ul class="swiper-wrapper flex items-stretch h-full">
                         <!-- sergey ivanov -->
@@ -589,8 +594,9 @@
             </div>
 
             <!-- sub content -->
-            <div class="container space-y-6 md:space-y-7">
-                <h3 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Оставить свой отзыв:</h3>
+            <div class="container">
+                <h3 class="text-xl 520:text-3xl mb-6 mobile-m:text-2xl md:mb-7 md:text-[32px] md:leading-[37.7px]">Оставить свой отзыв:</h3>
+
                 <ul class="grid grid-cols-1 gap-6 520:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-5 xl:grid-cols-5 xl:gap-[30px]">
                     <!-- Prodoctorov -->
                     <li class="flex flex-col items-center gap-5">
@@ -603,13 +609,7 @@
                                 <span>/</span>
                                 <span>5</span>
                             </p>
-                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z" fill="#DDDDDD" />
-                            </svg>
+                            <img src="./images/icons/stars.svg" alt="rate stars icon">
                         </div>
                     </li>
                     <!-- google -->
@@ -643,13 +643,7 @@
                                 <span>/</span>
                                 <span>5</span>
                             </p>
-                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z" fill="#DDDDDD" />
-                            </svg>
+                            <img src="./images/icons/stars.svg" alt="rate stars icon">
                         </div>
                     </li>
                     <!-- yandex -->
@@ -663,13 +657,7 @@
                                 <span>/</span>
                                 <span>5</span>
                             </p>
-                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z" fill="#DDDDDD" />
-                            </svg>
+                            <img src="./images/icons/stars.svg" alt="rate stars icon">
                         </div>
                     </li>
                     <!-- zoon -->
@@ -683,13 +671,7 @@
                                 <span>/</span>
                                 <span>5</span>
                             </p>
-                            <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5001 14.3917L15.6501 17.5001L14.2834 11.6417L18.8334 7.70008L12.8417 7.19175L10.5001 1.66675L8.15841 7.19175L2.16675 7.70008L6.71675 11.6417L5.35008 17.5001L10.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M34.5001 14.3917L39.6501 17.5001L38.2834 11.6417L42.8334 7.70008L36.8417 7.19175L34.5001 1.66675L32.1584 7.19175L26.1667 7.70008L30.7167 11.6417L29.3501 17.5001L34.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M58.5001 14.3917L63.6501 17.5001L62.2834 11.6417L66.8334 7.70008L60.8417 7.19175L58.5001 1.66675L56.1584 7.19175L50.1667 7.70008L54.7167 11.6417L53.3501 17.5001L58.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M82.5001 14.3917L87.6501 17.5001L86.2834 11.6417L90.8334 7.70008L84.8417 7.19175L82.5001 1.66675L80.1584 7.19175L74.1667 7.70008L78.7167 11.6417L77.3501 17.5001L82.5001 14.3917Z" fill="#BADF93" />
-                                <path d="M106.5 14.3917L111.65 17.5001L110.283 11.6417L114.833 7.70008L108.842 7.19175L106.5 1.66675L104.158 7.19175L98.1667 7.70008L102.717 11.6417L101.35 17.5001L106.5 14.3917Z" fill="#DDDDDD" />
-                            </svg>
+                            <img src="./images/icons/stars.svg" alt="rate stars icon">
                         </div>
                     </li>
                 </ul>
@@ -697,21 +679,26 @@
         </section>
 
         <!-- doctors -->
-        <section class="py-8 sm:pt-16 sm:pb-10 md:pt-[72px] md:pb-12">
+        <section class="py-8 sm:pt-16 sm:pb-10 md:pt-[72px] md:pb-11">
             <!-- main content -->
-            <div class="container mb-6 md:mb-8">
+            <div class="container">
                 <!-- section header -->
-                <div class="flex gap-4 mb-8 sm:mb-10 md:mb-12 sm:gap-8">
-                    <img width="70" height="70" src="./images/icons/user.svg" alt="user" class="size-11 aspect-square 520:size-[52px] sm:size-[60px] md:size-[70px]">
-                    <div class="flex grow items-center justify-between gap-2.5 mt-au py-[11 border-b-[3px] border-brand-lime-500">
-                        <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Наши врачи</h2>
+                <div class="flex gap-4 mb-8 sm:mb-10 sm:gap-6 md:mb-12">
+                    <div class="flex justify-center items-center w-[70px] h-[70px] bg-brand-lime-500 rounded-full min-w-max aspect-square">
+                        <img width="36" height="36" src="./images/icons/user-icon.svg" alt="User icon" class="w-6 h-6 sm:w-10 sm:h-10 520:w-8 520:h-8 md:w-[33px] md:h-[33px]">
+                    </div>
+
+                    <div class="flex grow items-center justify-between gap-2.5 mt-au py-2 border-b-[3px] border-brand-lime-500 md:py-4">
+                        <h2 class="text-xl 520:text-3xl mobile-m:text-2xl md:text-[32px] md:leading-[37.7px]">Наши врачи
+                        </h2>
+
                         <!-- btn prev & next -->
-                        <div class="flex gap-10">
+                        <div class="flex gap-5 md:gap-10">
                             <button aria-label="button prev" class="doctors-section-swiper--button-prev disabled:opacity-50">
-                                <img width="30" height="30" src="./images/icons/arrow-right.svg" alt="arrow right" class="size-6 rotate-180 sm:size-7 md:size-[30px]">
+                                <svg class="rotate-180" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 15a.937.937 0 0 0 .938.938h22.111l-5.9 5.898a.938.938 0 1 0 1.327 1.328l7.5-7.5a.936.936 0 0 0 0-1.328l-7.5-7.5a.94.94 0 0 0-1.602.664c0 .249.099.488.275.664l5.9 5.899H2.813a.937.937 0 0 0-.938.937Z" fill="#393939"/></svg>
                             </button>
                             <button aria-label="button next" class="doctors-section-swiper--button-next disabled:opacity-50">
-                                <img width="30" height="30" src="./images/icons/arrow-right.svg" alt="arrow right" class="size-6 sm:size-7 md:size-[30px]">
+                                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 15a.937.937 0 0 0 .938.938h22.111l-5.9 5.898a.938.938 0 1 0 1.327 1.328l7.5-7.5a.936.936 0 0 0 0-1.328l-7.5-7.5a.94.94 0 0 0-1.602.664c0 .249.099.488.275.664l5.9 5.899H2.813a.937.937 0 0 0-.938.937Z" fill="#393939"/></svg>
                             </button>
                         </div>
                     </div>
@@ -722,14 +709,15 @@
                     <!-- swiper wrapper -->
                     <ul class="swiper-wrapper min-h-max h-full">
                         <!-- Светлакова Елена Николаевна -->
-                        <li class="swiper-slide js-doctors-section-swiper--slide flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500">
+                        <li class="swiper-slide js-doctors-section-swiper--slide doctor-item">
                             <!-- img -->
                             <img width="278" height="354" src="./images/doctors/elena-nikolayevna.jpg" alt="Светлакова Елена Николаевна" class="inline-block w-full h-auto aspect-[140/177] mb-5 rounded-[5px] bg-brand-sky-200">
-                            <h3 class="text-[22px] leading-8 font-roboto text-center mb-2.5">Светлакова Елена Николаевна</h3>
-                            <ul class="text-center mb-auto grow ">
-                                <li class="inline text-lg leading-[26px] text-[#536763]">Врач - пародонтолог,</li>
-                                <li class="inline text-lg leading-[26px] text-[#536763]">доктор медицинских наук</li>
-                            </ul>
+                            <!-- info -->
+                            <div class="grow space-y-2.5">
+                                <h3 class="text-[22px] leading-8 font-roboto text-center">Светлакова Елена Николаевна</h3>
+                                <p class="text-lg text-center leading-[26px] text-[#536763">Врач - пародонтолог, <br> доктор медицинских наук</p>
+                            </div>
+                            <!-- detail-link -->
                             <a href="#" class="detail-btn mt-5 py-[18px] rounded-none text-[#393939] font-roboto font-normal text-lg hover:text-white hover:bg-[#393939] transition-all">
                                 <span>Подробнее</span>
                                 <svg class="size-5" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -738,13 +726,15 @@
                             </a>
                         </li>
                         <!-- Крючкова Елизавета Сергеевна -->
-                        <li class="swiper-slide js-doctors-section-swiper--slide flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500">
+                        <li class="swiper-slide js-doctors-section-swiper--slide doctor-item">
                             <!-- img -->
                             <img width="278" height="354" src="./images/doctors/elizaveta-sergeyevna.jpg" alt="Крючкова Елизавета Сергеевна" class="inline-block w-full h-auto aspect-[140/177] mb-5 rounded-[5px] bg-brand-sky-200">
-                            <h3 class="text-[22px] leading-8 font-roboto text-center mb-2.5">Крючкова Елизавета Сергеевна</h3>
-                            <ul class="text-center mb-auto grow ">
-                                <li class="inline text-lg leading-[26px] text-[#536763]">Стоматолог - гигиенист</li>
-                            </ul>
+                            <!-- info -->
+                            <div class="grow space-y-2.5">
+                                <h3 class="text-[22px] leading-8 font-roboto text-center">Крючкова Елизавета Сергеевна</h3>
+                                <p class="text-lg text-center leading-[26px] text-[#536763">Стоматолог - гигиенист</p>
+                            </div>
+                            <!-- detail-link -->
                             <a href="#" class="detail-btn mt-5 py-[18px] rounded-none text-[#393939] font-roboto font-normal text-lg hover:text-white hover:bg-[#393939]">
                                 <span>Подробнее</span>
                                 <svg class="size-5" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -753,14 +743,15 @@
                             </a>
                         </li>
                         <!-- Дементьева Кристина Дмитриевна -->
-                        <li class="swiper-slide js-doctors-section-swiper--slide flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500">
+                        <li class="swiper-slide js-doctors-section-swiper--slide doctor-item">
                             <!-- img -->
                             <img width="278" height="354" src="./images/doctors/kristina-dimitriyevna.jpg" alt="Дементьева Кристина Дмитриевна" class="inline-block w-full h-auto aspect-[140/177] mb-5 rounded-[5px] bg-brand-sky-200">
-                            <h3 class="text-[22px] leading-8 font-roboto text-center mb-2.5">Дементьева Кристина Дмитриевна
-                            </h3>
-                            <ul class="text-center mb-auto grow ">
-                                <li class="inline text-lg leading-[26px] text-[#536763]">Врач - стоматолог</li>
-                            </ul>
+                            <!-- info -->
+                            <div class="grow space-y-2.5">
+                                <h3 class="text-[22px] leading-8 font-roboto text-center">Дементьева Кристина Дмитриевна</h3>
+                                <p class="text-lg text-center leading-[26px] text-[#536763">Врач - стоматолог</p>
+                            </div>
+                            <!-- detail-link -->
                             <a href="#" class="detail-btn mt-5 py-[18px] rounded-none text-[#393939] font-roboto font-normal text-lg hover:text-white hover:bg-[#393939]">
                                 <span>Подробнее</span>
                                 <svg class="size-5" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -769,14 +760,15 @@
                             </a>
                         </li>
                         <!-- Тутынина Анна Олеговна -->
-                        <li class="swiper-slide js-doctors-section-swiper--slide flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500">
+                        <li class="swiper-slide js-doctors-section-swiper--slide doctor-item">
                             <!-- img -->
                             <img width="278" height="354" src="./images/doctors/anna-olegovna.jpg" alt="Тутынина Анна Олеговна" class="inline-block w-full h-auto aspect-[140/177] mb-5 rounded-[5px] bg-brand-sky-200">
-                            <h3 class="text-[22px] leading-8 font-roboto text-center mb-2.5">Тутынина Анна Олеговна</h3>
-                            <ul class="text-center mb-auto grow ">
-                                <li class="inline text-lg leading-[26px] text-[#536763]">Врач - стоматолог - детский
-                                </li>
-                            </ul>
+                            <!-- info -->
+                            <div class="grow space-y-2.5">
+                                <h3 class="text-[22px] leading-8 font-roboto text-center">Тутынина Анна Олеговна</h3>
+                                <p class="text-lg text-center leading-[26px] text-[#536763">Врач - стоматолог - детский</p>
+                            </div>
+                            <!-- detail-link -->
                             <a href="#" class="detail-btn mt-5 py-[18px] rounded-none text-[#393939] font-roboto font-normal text-lg hover:text-white hover:bg-[#393939]">
                                 <span> Подробнее</span>
                                 <svg class="size-5" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -785,13 +777,15 @@
                             </a>
                         </li>
                         <!-- Крючкова Елизавета Сергеевна -->
-                        <li class="swiper-slide js-doctors-section-swiper--slide flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500">
+                        <li class="swiper-slide js-doctors-section-swiper--slide doctor-item">
                             <!-- img -->
                             <img width="278" height="354" src="./images/doctors/elizaveta-sergeyevna.jpg" alt="Крючкова Елизавета Сергеевна" class="inline-block w-full h-auto aspect-[140/177] mb-5 rounded-[5px] bg-brand-sky-200">
-                            <h3 class="text-[22px] leading-8 font-roboto text-center mb-2.5">Крючкова Елизавета Сергеевна</h3>
-                            <ul class="text-center mb-auto grow ">
-                                <li class="inline text-lg leading-[26px] text-[#536763]">Стоматолог - гигиенист</li>
-                            </ul>
+                            <!-- info -->
+                            <div class="grow space-y-2.5">
+                                <h3 class="text-[22px] leading-8 font-roboto text-center">Крючкова Елизавета Сергеевна</h3>
+                                <p class="text-lg text-center leading-[26px] text-[#536763">Стоматолог - гигиенист</p>
+                            </div>
+                            <!-- detail-link -->
                             <a href="#" class="detail-btn mt-5 py-[18px] rounded-none text-[#393939] font-roboto font-normal text-lg hover:text-white hover:bg-[#393939]">
                                 <span>Подробнее</span>
                                 <svg class="size-5" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -808,7 +802,7 @@
         </section>
 
         <!-- FAQ -->
-        <section class="py-8 sm:pt-10 md:pt-12">
+        <section class="py-8 sm:pt-10 md:pt-11">
             <div class="container">
                 <div class="flex items-end bg-bannerBg p-5 pt-40 rounded-15 sm:p-8 sm:pt-50 md:p-12 md:pt-[243px]">
                     <!-- faq-list -->

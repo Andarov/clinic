@@ -78,6 +78,10 @@
     @apply text-15 leading-6 font-medium text-brand-emerald-900 uppercase md:text-white hover:text-brand-emerald-900 duration-300;
   }
 
+  .doctor-item{
+    @apply flex flex-col h-auto p-5 border border-dashed border-brand-sky-200 rounded-15 hover:border-solid hover:border-brand-lime-500
+  }
+
   .about-section--list-item {
     @apply flex items-start gap-3.5;
   }
