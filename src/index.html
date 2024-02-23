@@ -604,7 +604,7 @@
                             <img width="161" height="70" src="./images/companies/prodoktorov.svg" alt="prodoktorov logo" class="w-[161px] h-[70px] filter grayscale group-hover:grayscale-0 transition-all">
                         </div>
                         <div class="flex gap-3.5">
-                            <p class="text-[#536763]">
+                            <p class="text-[#536763] whitespace-nowrap">
                                 <span>4.7</span>
                                 <span>/</span>
                                 <span>5</span>
@@ -618,7 +618,7 @@
                             <img width="115" height="85" src="./images/companies/google.svg" alt="google logo" class="w-[115px] h-[85px] filter grayscale group-hover:grayscale-0 transition-all">
                         </div>
                         <div class="flex gap-3.5">
-                            <p class="text-[#536763]">
+                            <p class="text-[#536763] whitespace-nowrap">
                                 <span>5</span>
                                 <span>/</span>
                                 <span>5</span>
@@ -638,7 +638,7 @@
                             <img width="104" height="42" src="./images/companies/2GIS.svg" alt="two gis logo" class="w-[104px] h-[42px] filter grayscale group-hover:grayscale-0 transition-all">
                         </div>
                         <div class="flex gap-3.5">
-                            <p class="text-[#536763]">
+                            <p class="text-[#536763] whitespace-nowrap">
                                 <span>4.7</span>
                                 <span>/</span>
                                 <span>5</span>
@@ -652,7 +652,7 @@
                             <img width="113" height="62" src="./images/companies/yandex.svg" alt="yandex logo" class="w-[113px] h-[62px] filter grayscale group-hover:grayscale-0 transition-all">
                         </div>
                         <div class="flex gap-3.5">
-                            <p class="text-[#536763]">
+                            <p class="text-[#536763] whitespace-nowrap">
                                 <span>4.7</span>
                                 <span>/</span>
                                 <span>5</span>
@@ -666,7 +666,7 @@
                             <img width="121" height="30" src="./images/companies/zoon.svg" alt="zoon logo" class="w-[121px] h-[30px] filter grayscale group-hover:grayscale-0 transition-all">
                         </div>
                         <div class="flex gap-3.5">
-                            <p class="text-[#536763]">
+                            <p class="text-[#536763] whitespace-nowrap">
                                 <span>4.7</span>
                                 <span>/</span>
                                 <span>5</span>
@@ -859,13 +859,13 @@
 
 
     <!-- video modal -->
-    <div style="display: none;" class="js-video-modal flex fixed z-10 w-full min-h-screen top-0 right-0 left-0 bottom-0 items-center justify-center">
+    <div style="display: none; opacity: 0;" class="js-video-modal flex fixed z-10 w-full min-h-screen top-0 right-0 left-0 bottom-0 items-center justify-center transition-opacity duration-500">
 
         <!-- overlay -->
         <div class="js-video-modal--overlay bg-black/80 w-full h-full z-0"></div>
 
         <!-- video -->
-        <video width="768" height="432" controls autoplay src="./video/video1.mp4" class="js-video-modal--video js absolute w-full h-auto bg-black aspect-video md:w-[768px]">
+        <video width="768" height="432" controls style="transform:translateY(100px);" src="./video/video1.mp4" class="js-video-modal--video js absolute w-full h-auto bg-black aspect-video transition-transform duration-300 md:w-[768px]">
         </video>
 
         <!-- close modal -->

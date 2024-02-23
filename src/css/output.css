@@ -1214,6 +1214,10 @@ input[type="search"]::-webkit-search-cancel-button,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1352,6 +1356,10 @@ input[type="search"]::-webkit-search-cancel-button,
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-15 {
@@ -1793,8 +1801,24 @@ input[type="search"]::-webkit-search-cancel-button,
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .container {
@@ -2251,22 +2275,18 @@ input[type="search"]::-webkit-search-cancel-button,
     padding-bottom: 1.25rem;
   }
 
-  .md\:py-\[86px\] {
-    padding-top: 86px;
-    padding-bottom: 86px;
-  }
-
   .md\:py-\[18px\] {
     padding-top: 18px;
     padding-bottom: 18px;
   }
 
-  .md\:pb-1 {
-    padding-bottom: 0.25rem;
+  .md\:py-\[86px\] {
+    padding-top: 86px;
+    padding-bottom: 86px;
   }
 
-  .md\:pb-11 {
-    padding-bottom: 2.75rem;
+  .md\:pb-1 {
+    padding-bottom: 0.25rem;
   }
 
   .md\:pb-12 {
@@ -2287,10 +2307,6 @@ input[type="search"]::-webkit-search-cancel-button,
 
   .md\:pl-4 {
     padding-left: 1rem;
-  }
-
-  .md\:pt-11 {
-    padding-top: 2.75rem;
   }
 
   .md\:pt-12 {
@@ -2440,24 +2456,12 @@ input[type="search"]::-webkit-search-cancel-button,
     gap: 1.25rem;
   }
 
-  .lg\:p-16 {
-    padding: 4rem;
-  }
-
-  .lg\:p-\[\] {
-    padding: ;
-  }
-
-  .lg\:p-\[60px\] {
-    padding: 60px;
+  .lg\:pb-11 {
+    padding-bottom: 2.75rem;
   }
 
   .lg\:pl-7 {
     padding-left: 1.75rem;
-  }
-
-  .lg\:pb-11 {
-    padding-bottom: 2.75rem;
   }
 
   .lg\:pt-11 {

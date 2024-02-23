@@ -49,10 +49,20 @@ elVideoUrls.forEach((video) => {
   video.addEventListener('click', () => {
     elVideoModalVideo.setAttribute('src', url);
     elVideoModal.style.display = 'flex';
+    setTimeout(() => {
+      elVideoModal.style.opacity = '1';
+      elVideoModalVideo.style.transform = 'translateY(0px)';
+      elVideoModalVideo.play();
+    }, 200);
   });
 });
 const closeVideoModal = () => {
-  elVideoModal.style.display = 'none';
+  elVideoModalVideo.style.transform = 'translateY(100px)';
+  elVideoModal.style.opacity = '0';
+  setTimeout(() => {
+    elVideoModalVideo.pause();
+    elVideoModal.style.display = 'none';
+  }, 200);
 };
 
 // close modal
